@@ -50,6 +50,13 @@ body {
     margin-left: 1.5vw;
 }
 
+.list a {
+    transition: color .3s ease-in-out;
+}
+
+.list a:hover {  
+  color: var(--pseudo-color);
+}
 
 header .imagecontainer {
   width: 80vw;
@@ -61,6 +68,7 @@ header .imagecontainer {
     margin: 10vh auto 0 auto;
     /* filter: drop-shadow(7px 1px 2px rgba(20, 20, 20, 0.541)); */
 }
+
 
 .aboutme {
     margin-top: 0vh;
@@ -94,8 +102,14 @@ header .imagecontainer {
     border: none;
     background-color: var(--secondary-color);
     box-shadow: 2px 2px 6px rgba(20, 20, 20, 0.63);
+    transition: background-color .5s ease-in-out;
+    border-radius: 5px;
 }
 
+.browseproject:hover,
+.browseblog:hover {
+    background-color: var(--pseudo-color);
+}
 
 .connect {
     width: 100%;
@@ -183,8 +197,53 @@ span {
     padding: 5px 8px;
     box-shadow: 2px 2px 6px rgba(20, 20, 20, 0.63);
     border-radius: 5px;
+    transition: background-color .5s ease-in-out;
+}
+
+.seeprojectsource:hover,
+.seeprojectlive:hover,
+.readblog:hover {
+    background-color: var(--pseudo-color);
 }
 
 small {
     opacity: .6;
+}
+
+
+@media screen and (min-width: 768px) {
+    .navigationlinks {
+        padding: 4vh 4vw;
+    }
+
+    header .imagecontainer {
+        width: 40vw;
+    }
+
+    .list a {
+        font-size: 1.5rem;
+        margin-left: 1.5vw;
+    }
+
+    .footerlink .link img {
+        width: 5vw;
+        height: 4vh;
+        margin-right: 1vw;
+    }
+
+    .aboutme {
+        font-size: 3.5rem;
+    }
+
+    .one,
+    .two,
+    .three,
+    .projecttitle {
+        font-size: 1.3rem;
+        margin-top: 15vh;
+    }
+    
+    .navigationlinks {
+        position: relative;
+    }
 }
