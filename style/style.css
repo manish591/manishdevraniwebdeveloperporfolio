@@ -142,3 +142,22 @@ span {
     text-decoration: none;
     cursor: pointer;
 }
+
+.blogtitle,
+.bdescription,
+.pdescription,
+.projecttitle {
+    margin-left: 10vw;
+}
+
+.blogtitle,
+.projecttitle {
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 1vh;
+}
+
+.blogcontainer,
+.projectcontainer {
+    margin-left: 10vw;
+    margin-top: 5vh;
+}
