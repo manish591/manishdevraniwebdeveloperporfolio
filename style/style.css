@@ -90,10 +90,9 @@ header .imagecontainer {
 .browseproject,
 .browseblog {
     margin-top: 2vh;
-    padding: 5px;
+    padding: 5px 8px;
     border: none;
     background-color: var(--secondary-color);
-    color: black;
     box-shadow: 2px 2px 6px rgba(20, 20, 20, 0.63);
 }
 
@@ -111,6 +110,7 @@ header .imagecontainer {
     width: 8vw;
     height: 7vw;
     margin-right: 4vw;
+    cursor: pointer;
 }
 
 .footerlink {
@@ -158,6 +158,33 @@ span {
 
 .blogcontainer,
 .projectcontainer {
-    margin-left: 10vw;
-    margin-top: 5vh;
+    margin: 10vh 0 5vh 10vw;
+}
+
+.projectname,
+.blogname {
+    font-family: 'Anton', sans-serif;
+}
+
+.projectdescription,
+.blogdescription {
+    margin: 3vh 0;
+}
+
+.seeprojectsource {
+    margin-right: 2vw;
+}
+
+.seeprojectsource,
+.seeprojectlive,
+.readblog {
+    border: none;
+    background-color: var(--secondary-color);
+    padding: 5px 8px;
+    box-shadow: 2px 2px 6px rgba(20, 20, 20, 0.63);
+    border-radius: 5px;
+}
+
+small {
+    opacity: .6;
 }
