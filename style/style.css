@@ -128,3 +128,17 @@ span {
     font-family: cursive;
 }
 
+.list li a {
+    text-decoration: none;
+    color: var(--color);
+}
+
+.browseproject a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.browseblog a {
+    text-decoration: none;
+    cursor: pointer;
+}
