@@ -36,25 +36,18 @@ body {
 .logoimg {
     width: 8vw;
     position: absolute;
-    top: 5vh;
+    top: 4.5vh;
 }
 
 
-small {
+.small {
  position: absolute;
- top: 5.5vh;
+ top: 5vh;
  left: 11vw;
  line-height: 1;
  color: var(--secondory-txt-clr);
 }
 
-.mytagline {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 1rem;
-    letter-spacing: .5px;
-    text-transform: uppercase;
-
-}
 
 .list {
     list-style: none;
@@ -66,9 +59,8 @@ small {
     display: inline;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: .7rem;
-    margin-left: 1.5vw;
     border: 1px solid var(--border-clr);
-    padding: 10px 20px;
+    padding: 10px 18px;
 }
 
 .list a {
@@ -92,24 +84,13 @@ strong {
 
 
 
-/* 
-.themeimage {
-    width: 100%;
-    height: 90%;
-    margin: 10vh auto 0 auto;
-    position: absolute;
-    bottom: 0vh;
-    left: 55vw;
-} */
-
-
 .aboutme {
     font-family: 'Anton', sans-serif;
     font-weight: 900;
     font-size: 3rem;
     line-height: 1.3;
     margin-left: 10vw;
-    margin-top: 15vh;
+    margin-top: 20vh;
 }
 
 
@@ -119,6 +100,7 @@ strong {
  {
     margin-top: 15vh;
     margin-left: 10vw;
+    margin-right: 2vh;
 }
 
 .sectiontitle {
@@ -203,10 +185,18 @@ span {
     margin-left: 10vw;
 }
 
+.projecttitle {
+    margin-top: 15vh;
+}
+
 .blogtitle,
 .projecttitle {
     font-family: 'Anton', sans-serif;
     margin-bottom: 1vh;
+}
+
+.projectlist li {
+    margin-top: 10vh;
 }
 
 .blogcontainer,
@@ -245,7 +235,7 @@ span {
     background-color: var(--pseudo-color);
 }
 
-small {
+.data {
     opacity: .6;
 }
 
