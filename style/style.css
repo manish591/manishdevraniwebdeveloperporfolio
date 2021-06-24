@@ -31,6 +31,23 @@ body {
     z-index: 10;
 }
 
+
+
+.logoimg {
+    width: 8vw;
+    position: absolute;
+    top: 5vh;
+}
+
+
+small {
+ position: absolute;
+ top: 5.5vh;
+ left: 11vw;
+ line-height: 1;
+ color: var(--secondory-txt-clr);
+}
+
 .mytagline {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1rem;
