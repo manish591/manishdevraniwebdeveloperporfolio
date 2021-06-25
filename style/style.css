@@ -47,11 +47,13 @@ body {
 }
 
 .small {
- position: absolute;
- top: 5vh;
- left: 11vw;
- line-height: 1;
  color: var(--secondory-txt-clr);
+ font-size: .8rem;
+ display: inline;
+ margin: 2px;
+ position: absolute;
+ top: 4.5vh;
+ font-family: monospace;
 }
 
 
@@ -59,6 +61,7 @@ body {
     list-style: none;
     text-align: right;
     margin-right: 2vw;
+    margin-top: 1vw;
 }
 
 .list li {
@@ -237,6 +240,10 @@ span {
     box-shadow: 2px 2px 6px rgba(27, 27, 27, 0.74);
 }
 
+article {
+  margin-top: 10vh;
+}
+
 .seeprojectsource {
    background-color: var(--bg-color);
    padding: 8px 18px;
@@ -256,59 +263,53 @@ span {
 
 
 @media screen and (min-width: 768px) {
+   .navigationlinks {
+       margin-top: 2rem;
+   }
+
+   .small {
+     top: 45px;
+     font-size: 1rem;
+   }
+
+   .list li {
+       padding: 13px 40px;
+       font-size: 1rem;
+       margin-left: 15px;
+   }
+
+   .aboutme {
+       margin-top: 150px;
+       margin-bottom: 150px;
+   }
+
+   .footerlink .link img{
+       width: 30px;
+       height: 30px;
+       margin-right: 20px;
+   }
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px){
     .navigationlinks {
-        padding: 4vh 4vw;
-        margin-top: 10vh;
+        margin-top: 2rem;
     }
 
+    .small {
+        top: 55px;
+    }
+ }
+
+ @media screen and (min-width: 1024px) and (min-height: 1366px){
     .navigationlinks {
-        position: relative;
+        margin-top: 2rem;
     }
 
-    header .imagecontainer {
-        margin-top: 35vh;
-        margin-bottom: 25vh;
-    }
-
-    .logoimg {
-        width: 80px;
-        top: 5px;
-        left: 50px;
-    }
-
-    .list li {
-        margin-left: 2vh;
-    }
-
-
-    .list a {
-        font-size: 1rem;
-        margin-left: 1.5vw;
-        padding: 10px 15px 10px 7px;
-    }
-
-    .footerlink .link img {
-        width: 5vw;
-        height: 4vh;
-        margin-right: 1vw;
-    }
-
-    .aboutme {
-        font-size: 4rem;
-        text-transform: uppercase;
-    }
-
-    .one,
-    .two,
-    .three,
-    .projecttitle {
-        font-size: 1.3rem;
-        margin-top: 15vh;
-        width: 50vw;
-    }
-
-    .sectiontitle {
-        font-size: 1.5rem;
+    .small {
+        top: 75px;
     }
     
-}
+    html {
+        font-size: 23px;
+    } 
+ }
