@@ -3,12 +3,12 @@
 
 
 :root {
-    --bg-color: #eae7d7;
-    --text-color: black;
-    --secondory-txt-clr: #8e8d8a;
-    --border-clr: #d8c3a5;
+    --bg-color: #004E58;
+    --text-color: #F9FEFF;
+    --secondory-txt-clr: white;
+    --border-clr: #F9FEFF;
     --other-clr1: #e98074;
-    --other-clr2: #e85a4f;
+    --other-clr2: #EF8189;
 }
 
 * {
@@ -146,7 +146,7 @@ strong {
 .connect {
     width: 100%;
     margin-top: 15vh;
-    background-color: var(--text-color);
+    background-color: var(--other-clr2);
     color: var(--border-clr);
     padding: 3vh 0;
 }
