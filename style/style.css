@@ -46,6 +46,16 @@ body {
     clip-path: circle(34.1% at 53% 49%);
 }
 
+.projectimg {
+    width: 80vw;
+    margin: 0 auto;
+    clip-path: circle(34.1% at 53% 49%);
+}
+
+header .imagecontainer {
+    margin-bottom: 5vh;
+}
+
 .small {
  color: var(--secondory-txt-clr);
  font-size: .8rem;
@@ -201,26 +211,23 @@ ol {
     margin-right: 2vw;
 }
 
-.projecttitle,
-.blogtitle {
-    margin-top: 15vh;
-}
 
 .blogtitle,
 .projecttitle {
     font-family: 'Barlow', sans-serif;
     font-weight: 900;
-    font-size: 1.5rem;
-    margin-bottom: 1vh;
+    font-size: 2rem;
+    margin-bottom: 2vh;
 }
 
-.projectlist li {
-    margin-top: 10vh;
+.projectlist li, 
+.bloglist li {
+    margin-top: 15vh;
 }
 
 .blogcontainer,
 .projectcontainer {
-    margin: 10vh 0 5vh 10vw;
+    margin: 15vh 0 5vh 10vw;
 }
 
 .projectname,
@@ -270,6 +277,16 @@ article {
     opacity: .6;
 }
 
+.seeprojectlive a {
+    text-decoration: none;
+    color: black;
+}
+
+.seeprojectsource a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 
 @media screen and (min-width: 768px) {
    .navigationlinks {
@@ -290,6 +307,7 @@ article {
    .aboutme {
        margin-top: 150px;
        margin-bottom: 150px;
+       text-align: center;
    }
 
    .footerlink .link img{
@@ -299,19 +317,55 @@ article {
    }
    
     .aboutme {
-    margin-top: 20vh;
-    font-size: 4rem;
+    margin-top: 5vh;
+    font-size: 4.5rem;
   }
 
 
-   .myimg {
-    position: absolute;
-    width: 400px;
-    height: auto;
-    top: -12vh;
-    bottom: 0vh;
-    left: 55vw;
+  .myimg {
+    width: 20vw;
+    margin-left: 40vw;
+    margin-bottom: 5vh;
   } 
+
+  .projectimg {
+      width: 40vw;
+      margin: 0 auto;
+      margin-left: 26vw;;
+  }
+
+ .project, .technologies, .blogs {
+    background-color: #032E34;
+    max-width: 100%;
+    height: 50vh;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    padding: 10vh 5vw;
+    box-shadow: 2px 2px 8px rgba(15, 15, 15, 0.767) inset;
+  }
+
+
+  .one, .two , .three {
+      position: relative;
+  }
+
+  .one p, .two p, .three p{
+      position: absolute;
+      left: 30vw;
+      top: 12vh;
+      max-width: 50%;
+      text-align: center;
+  }
+
+  .sectiontitle {
+      font-size: 2rem;
+      margin-bottom: 0;
+  }
+  
+  /* .browseproject,
+.browseblog {
+    position: absolute;
+} */
 
 }
 
@@ -325,12 +379,9 @@ article {
     }
 
     .myimg {
-        position: absolute;
-        width: 300px;
-        height: auto;
-        top: -1vh;
-        bottom: 0vh;
-        left: 60vw;
+        width: 50vw;
+        margin-left: 25vw;
+        margin-bottom: 10vh;
       } 
     
  }
