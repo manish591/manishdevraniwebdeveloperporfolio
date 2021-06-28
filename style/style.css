@@ -155,9 +155,9 @@ strong {
 
 .connect {
     width: 100%;
-    margin-top: 15vh;
+    margin-top: 30vh;
     background-color: var(--other-clr2);
-    color: var(--border-clr);
+    color: black;
     padding: 3vh 0;
 }
 
@@ -287,11 +287,15 @@ article {
     color: var(--text-color);
 }
 
-
 @media screen and (min-width: 768px) {
    .navigationlinks {
        margin-top: 2rem;
    }
+   
+    .connect {
+        text-align: left;
+        color: black;
+    }
 
    .small {
      top: 45px;
@@ -305,9 +309,10 @@ article {
    }
 
    .aboutme {
-       margin-top: 150px;
-       margin-bottom: 150px;
+       margin-top: 7vh;
        text-align: center;
+       font-size: 4rem;
+       margin-right: 5vw;
    }
 
    .footerlink .link img{
@@ -316,16 +321,11 @@ article {
        margin-right: 20px;
    }
    
-    .aboutme {
-    margin-top: 5vh;
-    font-size: 4.5rem;
-  }
 
 
   .myimg {
-    width: 20vw;
-    margin-left: 40vw;
-    margin-bottom: 5vh;
+    width: 310px;
+    margin-left: 36vw;
   } 
 
   .projectimg {
@@ -334,38 +334,46 @@ article {
       margin-left: 26vw;;
   }
 
- .project, .technologies, .blogs {
+
+
+ .projects, .technologies, .blog {
     background-color: #032E34;
-    max-width: 100%;
-    height: 50vh;
-    margin-right: 10vw;
-    margin-left: 10vw;
-    padding: 10vh 5vw;
-    box-shadow: 2px 2px 8px rgba(15, 15, 15, 0.767) inset;
+    width: 30vw;
+    height: 70vh;
+    padding: 8vh 5vw;
+    margin: 15vh auto;
+    box-shadow: 7px 7px 12px rgb(15, 15, 15);
+    text-align: center;
+    border-radius: 20px;
   }
 
-
-  .one, .two , .three {
-      position: relative;
-  }
-
-  .one p, .two p, .three p{
-      position: absolute;
-      left: 30vw;
-      top: 12vh;
-      max-width: 50%;
-      text-align: center;
+  .technologies p, .projects p, .blog p {
+      margin-top: 2vh;
+      line-height: 1.3;
+      font-size: 1.2rem;
   }
 
   .sectiontitle {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 0;
   }
-  
-  /* .browseproject,
-.browseblog {
-    position: absolute;
-} */
+
+  header .imagecontainer {
+      margin-bottom: 45vh;
+  }
+
+  .browseblog, .browseproject {
+      background-color: var(--other-clr2);
+      border-color: black;
+  }
+
+  .projecttitle, .blogtitle {
+      font-size: 3rem;
+  }
+
+  .pdescription, .projectcontainer p, .bdescription, .blogcontainer {
+      font-size: 1.2rem;
+  }
 
 }
 
@@ -381,8 +389,16 @@ article {
     .myimg {
         width: 50vw;
         margin-left: 25vw;
-        margin-bottom: 10vh;
       } 
+
+      .projects, .technologies, .blog {
+        height: 45vh;
+        width: 45vw;
+      }
+
+      header .imagecontainer {
+        margin-bottom: 30vh;
+    }
     
  }
 
@@ -400,12 +416,7 @@ article {
     } 
 
     .myimg {
-        position: absolute;
-        width: 350px;
-        height: auto;
-        top: 5vh;
-        bottom: 0vh;
-        left: 60vw;
+        width: 50vw;
       } 
     
  }
