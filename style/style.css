@@ -369,10 +369,22 @@ article {
 
   .projecttitle, .blogtitle {
       font-size: 3rem;
+      width: 50vw;
+      margin: 0 auto;
   }
 
   .pdescription, .projectcontainer p, .bdescription, .blogcontainer {
       font-size: 1.2rem;
+  }
+
+  .projectcontainer, .blogcontainer {
+    width: 50vw;
+    margin: 0 auto;
+  }
+
+  .pdescription, .bdescription {
+    width: 50vw;
+    margin: 0 auto;
   }
 
 }
