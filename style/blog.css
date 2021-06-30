@@ -9,6 +9,13 @@ body {
 }
 
 .blogcontainer {
-    width: 50vw;
-    margin: 0 15vw;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+    .blogcontainer {
+        width: 50vw;
+        margin: 0 15vw;
+    }
 }
