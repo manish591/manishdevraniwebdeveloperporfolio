@@ -37,10 +37,19 @@ ul .links {
 
 .headerimage {
     width: 90vw;
-    margin: 5vh auto 12vh auto;
+    margin: 5vh auto 8vh auto;
 }
 
 .headerimg {
+    width: 90vw;
+}
+
+.resourceimage {
+    width: 90vw;
+    margin: 5vh auto 5vh auto;
+}
+
+.resourceimg {
     width: 90vw;
 }
 
@@ -76,6 +85,7 @@ span {
 p {
     font-size: 1.1rem;
     line-height: 1.8;
+    color: rgb(49, 67, 81);
 }
 
 .intro1  {
@@ -88,7 +98,7 @@ p {
 }
 
 .colorresources, .stockimagesresources, .illustrationsresources, .iconresources, .outro {
-    margin-top: 10vh;
+    margin-top: 15vh;
 }
 
 .colorpara, .iconpara, .illustrationpara, .stockimagepara {
@@ -103,20 +113,30 @@ p {
 
     .headerimage {
         width: 50vw;
-        margin: 5vh auto 12vh auto;
+        margin: 10vh 0 15vh 12vw;
     }
 
     .headerimg {
+        width: 70vw;
+        object-fit: cover;
+    }
+
+    .resourceimage {
         width: 50vw;
-        height: 60vh;
+        margin: 5vh auto 8vh auto;
+    }
+
+    .resourceimg {
+        width: 50vw;
+        object-fit: cover;
     }
 
     p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .intro1  {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     h1 {
