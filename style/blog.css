@@ -21,18 +21,25 @@ body {
     padding: 7vh 5vw;
 }
 
-ul  {
-  text-align: right;
+ul {
+    list-style: none;
 }
 
 li {
     display: inline;
-    margin-left: 3vw;
-    background-color: teal;
 }
 
-ul .links {
-    padding: 8px 15px;
+.links {
+    padding: 10px 15px;
+    border: 1px solid black;
+    font-size: .6rem;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
 }
 
 .headerimage {
@@ -105,6 +112,22 @@ p {
     margin-top: 2vh;
 }
 
+footer {
+    background-color: cadetblue;
+    margin-top: 30vh;
+    padding: 10vh 10vw;
+    text-align: center;
+}
+
+.socialhandles {
+    margin-left: 5px;
+}
+
+.socialhandles a{
+    text-decoration: none;
+    color: black;
+}
+
 @media only screen and (min-width: 700px) {
     .blogcontainer {
         width: 50vw;
@@ -149,6 +172,21 @@ p {
 
     h3 {
         font-size: 2rem;
+    }
+
+    .links {
+        padding: 10px 15px;
+        border: 1px solid black;
+        font-size: 1rem;
+        border-radius: 10px;
+        margin-right: 20px;
+        transition: background-color 1s, color .3s .3s;
+        cursor: pointer;
+    }
+
+    .links:hover{
+        background-color: teal;
+        color: #fff;
     }
 
 }
