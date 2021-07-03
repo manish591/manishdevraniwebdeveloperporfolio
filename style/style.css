@@ -6,7 +6,7 @@
     --bg-color: #004E58;
     --text-color: #F9FEFF;
     --secondory-txt-clr: white;
-    --border-clr: #F9FEFF;
+    --border-clr: #cbcfcf83;
     --other-clr1: #e98074;
     --other-clr2: #EF8189;
 }
@@ -77,16 +77,12 @@ header .imagecontainer {
 .list li {
     display: inline;
     font-size: .7rem;
-    border: 1px solid var(--border-clr);
+    border: 1.5px solid var(--border-clr);
     padding: 10px 18px;
     margin: 0;
-    transition: border-color .5s .3s;
+    transition: border-bottom-color 1s .2s, border 1s;
 }
 
-
-.list li:hover {
-    border-color: var(--text-color);
-}
 
 
 header .imagecontainer {
@@ -136,16 +132,15 @@ strong {
 .browseproject,
 .browseblog {
     margin-top: 3vh;
-    padding: 10px 15px 10px 5px;
-    background-color: var(--bg-color);
-    border: 1.5px solid var(--border-clr);
+    padding: 10px 15px;
+    background-color: var(--other-clr2);
     transition: border-color .5s ease-in-out;
-    border-radius: 5px;
+    border: none;
 }
 
 .browseblog a,
 .browseproject a {
-    color: var(--text-color);
+    color: black;
 }
 
 .browseproject:hover,
