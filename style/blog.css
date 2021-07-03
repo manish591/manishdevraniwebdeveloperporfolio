@@ -17,6 +17,11 @@ body {
     margin: 0 auto;
 }
 
+li {
+    display: inline;
+}
+
+
 .navigation {
     padding: 7vh 5vw;
 }
@@ -25,9 +30,12 @@ ul {
     list-style: none;
 }
 
-li {
-    display: inline;
+
+.selector {
+    display: block;
+    color: rgb(49, 67, 81);
 }
+
 
 .links {
     padding: 10px 15px;
@@ -100,7 +108,7 @@ p {
     line-height: 1.5;
 }
 
-.intro2 {
+.intro2, .intro3 {
     margin-top: 5vh;
 }
 
