@@ -34,6 +34,7 @@ ul {
 .selector {
     display: block;
     color: rgb(49, 67, 81);
+    margin-top: 5px;
 }
 
 

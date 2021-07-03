@@ -310,9 +310,10 @@ article {
    }
 
    .aboutme {
-       margin-top: 5vh;
+       margin-top: -1vh;
        text-align: left;
-       font-size: 4rem;
+       font-size: 3.7rem;
+       line-height: 1.1;
    }
 
    .footerlink .link img{
@@ -338,6 +339,7 @@ article {
  .projects, .technologies, .blog {
     text-align: left;
     margin-right: 20vw;
+    margin-top: 20vh;
   }
 
 
@@ -356,7 +358,7 @@ article {
 
   header .imagecontainer {
    margin-bottom: 60vh;
-   margin-top: 20vh;
+   margin-top: 0vh;
   }
 
   .browseblog, .browseproject {
@@ -430,9 +432,10 @@ article {
         margin-left: 8vw
       } 
 
-      .one p, .two p, .three p {
+    .one p, .two p, .three p {
         font-size: 1.2rem;
     }
+
     
  }
 
@@ -456,4 +459,5 @@ article {
       .one p, .two p, .three p {
           font-size: 1.5rem;
       }
+
  }

@@ -36,15 +36,83 @@
 
                 <p class="intro3">There are several type of selector in CSS.</p>
                 <ol>
-                    <li class="selector">1. Universal Selector</li>
+                    <li class="selector">1. ID Selector</li>
                     <li class="selector">2. Tag Selector</li>
                     <li class="selector">3. Class Selector</li>
-                    <li class="selector">4. ID selector</li>
+                    <li class="selector">4. Universal selector</li>
                     <li class="selector">5. Attribute Selector</li>
                 </ol>
             </div>
             <hr>
+
+            <div class="colorresources">
+                <h2 class="color-guide">ID Selector</h2>
+                <h3>Syntax</h3>
+                <p class="syntax"><strong>#id_value { style properties }</strong></p>
+                <p class="colorpara">You can see below how we are selcting elements with id selector.</p>
+                <img src="" alt="">
+                <img src="" alt="">
+                <p class="colorpara">The CSS ID selector matches an element based on the value of the element’s id attribute. In order for the element to be selected, its id attribute must match exactly the value given in the selector. ID selectors are the most powerful type of selector in terms of CSS specificity. Meaning that they beat out other types of selectors and the styles defined within win. That sounds good, but that’s typically considered bad, because it’s nice to have lower-specificity selectors that are easier to override when needed.</p>
+            </div>
+
+            <div class="colorresources">
+                <h2 class="color-guide">Tag Selector</h2>
+                <h3>Syntax</h3>
+                <p class="syntax"><strong>element { style properties }</strong></p>
+                <p class="colorpara">You can see below how we are selcting elements with type selector.</p>
+                <img src="" alt="">
+                <img src="" alt="">
+                <p class="colorpara">The CSS type selector matches elements by node name. In other words, it selects all elements of the given type within a document. Tag selectors are at their most useful when changing properties that are unique to that HTML element. Like setting the list-style on a  or tab-size on a . Also in reset stylesheets where you are specifically trying to unset styles that browsers apply to certain elements.
+                Don’t rely on them too much though. It’s typically more useful to have a class define styling that you can use on any HTML element.</p>
+            </div>
+
+            <div class="colorresources">
+                <h2 class="color-guide">Class Selector</h2>
+                <h3>Syntax</h3>
+                <p class="syntax"><strong>.class_name { style properties }</strong></p>
+                <p class="colorpara">You can see below how we are selcting elements with id selector.</p>
+                <img src="" alt="">
+                <img src="" alt="">
+                <p class="colorpara">The CSS class selector matches elements based on the contents of their class attribute. Class selectors are your friend. They are probably the most useful and versatile selectors out there. In part because they are well supported in all browsers. In part because you can add multiple classes (just separated by a space) on HTML elements. In part because there are JavaScript things you can do specifically for manipulating classes.</p>
+            </div>
+
+            <div class="colorresources">
+                <h2 class="color-guide">Universal Selector</h2>
+                <h3>Syntax</h3>
+                <p class="syntax"><strong>* { style properties }</strong></p>
+                <p class="colorpara">You can see below how we are selcting elements with id selector.</p>
+                <img src="" alt="">
+                <img src="" alt="">
+                <p class="colorpara">The CSS universal selector (*) matches elements of any type. Universal selectors can be namespaced when using @namespace. This is useful when dealing with documents containing multiple namespaces such as HTML5 with inline SVG or MathML, or XML that mixes multiple vocabularies.</p>
+            </div>
+
+            <div class="colorresources">
+                <h2 class="color-guide">Attribute Selector</h2>
+                <h3>Syntax</h3>
+                <p class="syntax"><strong>[attr=value] { style properties }</strong></p>
+                <p class="colorpara">You can see below how we are selcting elements with id selector.</p>
+                <img src="" alt="">
+                <img src="" alt="">
+                <p class="colorpara">The CSS attribute selector matches elements based on the presence or value of a given attribute. You might argue that attribute selectors are even more useful than classes because they have the same specificity value, but can be any attribute not just class, plus they can have a value you can select by.</p>
+            </div>
         </main>
+        <hr>  
+        <div class="outro">
+            <p class="outline">Thanks to everyone who read this blog post, And of course, thanks to you if you've read all the way down to here.
+                I hope you will find something useful out of this blog post that can help you out in understanding CSS much faster. After reading this blog post I highly recommond you to vist MOZILLA and CSS TRICKS for further reading. 
+                <br>Final Words:
+                Thank you so much for taking the time to read this and I hope you can find some really good design resources that will help you with your next design project. You can follow me on Twitter @manishdevrani77, Github @manish591, LinkedIn @manishdevrani .</p>
+        </div>
     </div>
+
+    <footer class="cta">
+        <p class="social">Find Me On</p>
+         <ul>
+             <li class="socialhandles"><a href="https://www.linkedin.com/in/manish-devrani-096925214/">LinkedIn</a></li>
+             <li class="socialhandles"><a href="https://github.com/manish591">Github</a></li>
+             <li class="socialhandles"><a href="https://twitter.com/manishdevrani77">Twitter</a></li>
+         </ul>
+         <p class="copy">@allrightsreserved</p>
+      </footer>
 </body>
 </html>
