@@ -211,8 +211,9 @@ ol {
 .projecttitle {
     font-family: 'Barlow', sans-serif;
     font-weight: 900;
-    font-size: 2rem;
-    margin-bottom: 2vh;
+    font-size: 2.5rem;
+    margin-bottom: 4vh;
+    margin-top: 10vh;
 }
 
 .projectlist li, 
@@ -328,12 +329,6 @@ article {
     margin-left: 8vw
   } 
 
-  .projectimg {
-      width: 40vw;
-      margin: 0 auto;
-      margin-left: 26vw;;
-  }
-
 
 
  .projects, .technologies, .blog {
@@ -341,6 +336,8 @@ article {
     margin-right: 20vw;
     margin-top: 20vh;
   }
+
+
 
 
 
@@ -367,9 +364,11 @@ article {
   }
 
   .projecttitle, .blogtitle {
-      font-size: 3rem;
+      font-size: 4rem;
       width: 50vw;
-      margin: 0 auto;
+      margin: 10vh auto;
+      text-align: center;
+      text-transform: uppercase;
   }
 
   .pdescription, .projectcontainer p, .bdescription, .blogcontainer {
@@ -384,6 +383,14 @@ article {
   .pdescription, .bdescription {
     width: 50vw;
     margin: 0 auto;
+  }
+
+  .seeprojectlive {
+      margin-right: 1vw;
+  }
+
+  .seeprojectlive, .seeprojectsource {
+      padding: 12px 30px;
   }
 
 }
