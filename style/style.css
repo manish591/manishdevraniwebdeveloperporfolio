@@ -230,6 +230,7 @@ ol {
 .blogname {
     font-family: 'Barlow', sans-serif;
     font-weight: 900;
+    font-size: 1.5rem;
 }
 
 .projectdescription,
@@ -288,6 +289,11 @@ article {
     color: black;
 }
 
+span {
+    font-size: .9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--other-clr2);
+}
 
 @media screen and (min-width: 768px) {
    .navigationlinks {
@@ -365,9 +371,9 @@ article {
 
   .projecttitle, .blogtitle {
       font-size: 4rem;
-      width: 50vw;
-      margin: 10vh auto;
-      text-align: center;
+      width: 60vw;
+      margin-top: 11vh;
+      margin-bottom: 6vh;
       text-transform: uppercase;
   }
 
@@ -376,13 +382,11 @@ article {
   }
 
   .projectcontainer, .blogcontainer {
-    width: 50vw;
-    margin: 0 auto;
+    width: 60vw;
   }
 
   .pdescription, .bdescription {
-    width: 50vw;
-    margin: 0 auto;
+    width: 60vw;
   }
 
   .seeprojectlive {
