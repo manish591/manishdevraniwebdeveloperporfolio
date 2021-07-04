@@ -22,7 +22,7 @@ li {
 }
 
 .syntax {
-    background-color: teal;
+    background-color: rgba(172, 171, 171, 0.658);
     color: white;
     padding: 3vh 1vw;
 }
