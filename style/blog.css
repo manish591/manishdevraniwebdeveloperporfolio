@@ -21,6 +21,11 @@ li {
     display: inline;
 }
 
+.syntax {
+    background-color: teal;
+    color: white;
+    padding: 3vh 1vw;
+}
 
 .navigation {
     padding: 7vh 5vw;
@@ -30,6 +35,9 @@ ul {
     list-style: none;
 }
 
+hr {
+    margin-top: 5vh;
+}
 
 .selector {
     display: block;
