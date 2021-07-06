@@ -43,14 +43,10 @@ body {
 .myimg {
     width: 80vw;
     margin: 0 auto;
-    clip-path: circle(34.1% at 53% 49%);
+    clip-path: circle(29.3% at 40% 38%);
 }
 
-.projectimg {
-    width: 80vw;
-    margin: 0 auto;
-    clip-path: circle(34.1% at 53% 49%);
-}
+
 
 header .imagecontainer {
     margin-bottom: 5vh;
@@ -332,7 +328,8 @@ span {
 
   .myimg {
     width: 200px;
-    margin-left: 8vw
+    margin-left: 8vw;
+    clip-path: circle(37.7% at 46% 41%);
   } 
 
 
