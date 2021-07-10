@@ -3,12 +3,13 @@
 
 
 :root {
-    --bg-color: #004E58;
-    --text-color: #F9FEFF;
+    --bg-color: #eae7dc;
+    --text-color: black;
     --secondory-txt-clr: white;
     --border-clr: #cbcfcf83;
     --other-clr1: #e98074;
-    --other-clr2: #EF8189;
+    --other-clr2: #e85a4f;
+    --nav-clr: black;
 }
 
 * {
@@ -29,15 +30,15 @@ body {
     padding: 3vh 2.5vw;
     color: var(--color);
     margin-top: 2vh;
-    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
 
 .logoimg {
     width: 8vw;
-    position: absolute;
-    top: 4.5vh;
 }
 
 .myimg {
@@ -55,11 +56,12 @@ header .imagecontainer {
 .small {
  color: var(--secondory-txt-clr);
  font-size: .8rem;
- display: inline;
  margin: 2px;
- position: absolute;
- top: 4.5vh;
- font-family: monospace;
+ font-family: 'Anton', sans-serif;
+ font-weight: bold;
+ letter-spacing: 1.1px;
+ color: var(--nav-clr);
+ line-height: 1.1;
 }
 
 
@@ -73,10 +75,12 @@ header .imagecontainer {
 .list li {
     display: inline;
     font-size: .7rem;
-    border: 1.5px solid var(--border-clr);
     padding: 10px 18px;
     margin: 0;
     transition: border-bottom-color 1s .2s, border 1s;
+    color: var(--nav-clr);
+    font-weight: bold;
+    border: .6px solid var(--border-clr);
 }
 
 
@@ -319,10 +323,9 @@ span {
    }
 
    .aboutme {
-       text-align: left;
+       text-align: center;
        font-size: 3.7rem;
        line-height: 1.1;
-       width: 45vw;
        margin-top: 10vh;
    }
 
@@ -334,9 +337,9 @@ span {
    
 
    .myimg {
-    max-width: 300px;
-    height: auto;
-    clip-path: circle(37.7% at 46% 41%);
+    max-width: 150px;
+    max-height: 200px;
+    clip-path: circle(38.6% at 41% 41%);
   } 
 
 
@@ -361,10 +364,10 @@ span {
   }
 
  header .imagecontainer {
-   margin-top: 30vh;   
+   margin-top: 12vh;   
    margin-bottom: 30vh;
    display: flex;
-   flex-direction: row-reverse;
+   flex-direction: column;
   }
 
   .browseblog, .browseproject {
