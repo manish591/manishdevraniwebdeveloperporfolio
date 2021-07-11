@@ -117,7 +117,14 @@ strong {
     border-radius: 22px;
 }
 
+.connectwithme a {
+    text-decoration: none;
+    color: black;
+}
 
+.connectwithme:visited {
+    text-decoration: none;
+}
 
 .one,
 .two,
