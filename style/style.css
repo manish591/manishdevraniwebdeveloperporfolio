@@ -358,6 +358,14 @@ section p {
        margin-left: 15px;
    }
 
+   .list a {
+       transition: color .5s ease-in-out;
+   }
+
+   .list a:hover {
+       color: var(--secondory-txt-clr);
+   }
+
    .aboutme {
        text-align: center;
        font-size: 2.5rem;
@@ -381,7 +389,7 @@ section p {
    .connectwithme {
        max-width: 30vw;
        text-align: center;
-       background-color: var(--nav-clr);
+       background-color: var(--text-color);
        padding: 20px 55px;
        color: var(--bg-color);
        border-radius: 20px;
@@ -405,18 +413,18 @@ section p {
     margin-bottom: 0vh;
   } 
 
-  .projects img, .technologies img, .blog img {
+   .projects img, .technologies img, .blog img {
       max-width: 250px;
       max-height: 250px;
   }
 
- .projects, .technologies, .blog {
-    color: white;
-    max-width: 60vw;
-    margin: 15vh auto;
+   .projects, .technologies, .blog {
+     color: white;
+     max-width: 60vw;
+     margin: 15vh auto;
   }
 
-  .boxes {
+   .boxes {
       width: 95vw;
       margin: 0vh auto;
       display: flex;
@@ -458,8 +466,8 @@ section p {
   .projecttitle, .blogtitle {
       font-size: 4rem;
       width: 60vw;
-      margin-top: 11vh;
-      margin-bottom: 6vh;
+      margin-top: 15vh;
+      margin-bottom: 13vh;
       text-transform: uppercase;
   }
 
