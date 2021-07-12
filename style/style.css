@@ -5,10 +5,9 @@
 :root {
     --bg-color: #0f1014;
     --text-color: white;
-    --secondory-txt-clr: white;
-    --border-clr: #cbcfcf83;
-    --other-clr1: #e98074;
-    --nav-clr: white;
+    --secondory-txt-clr: rgba(241, 241, 241, 0.753);
+    --footer-clr: grey;
+    --border-clr: rgba(158, 157, 157, 0.582);
 }
 
 * {
@@ -61,7 +60,7 @@ header .imagecontainer {
  font-family: 'Anton', sans-serif;
  font-weight: bold;
  letter-spacing: 1.1px;
- color: var(--nav-clr);
+ color: var(--text-color);
  line-height: 1.1;
 }
 
@@ -78,7 +77,6 @@ header .imagecontainer {
     font-size: .7rem;
     padding: 10px 18px;
     margin: 0;
-    transition: border-bottom-color 1s .2s, border 1s;
     color: var(--nav-clr);
     font-weight: bold;
     border: .6px solid var(--border-clr);
@@ -101,6 +99,7 @@ strong {
 .hi {
     font-size: 1.5rem;
     font-family: 'Barlow', sans-serif;
+    color: rgba(241, 241, 241, 0.753);
 }
 
 .me {
@@ -111,10 +110,11 @@ strong {
 .connectwithme {
     max-width: 60vw;
     padding: 18px 35px;
-    background-color: var(--nav-clr);
+    background-color: var(--text-color);
     border: none;
     color: var(--bg-color);
     border-radius: 22px;
+    font-weight: bold;
 }
 
 .connectwithme a {
@@ -141,30 +141,29 @@ strong {
     margin-bottom: 2vh;
     letter-spacing: .5px;
     font-size: 1.5rem;
-    color: var(--primary-color);
 }
 
 
 
 .browseproject,
 .browseblog {
+    all: unset;
     margin-top: 3vh;
     padding: 10px 15px;
-    background-color: var(--bg-color);
-    border: 1.5px solid white;
+    border: 2px solid var(--text-color);
 }
 
 .browseblog a,
 .browseproject a {
-    color: white;
+    color: var(--text-color);
 }
 
 .connect {
     width: 100%;
     margin-top: 30vh;;
-    color: white;
+    color: var(--text-color);
     padding: 3vh 0;
-    background-color: grey;
+    background-color: var(--footer-clr);
 }
 
 
@@ -184,11 +183,6 @@ strong {
     margin-left: 10vw;
 }
 
-span {
-    color: var(--secondary-color);
-    font-size: 1.8rem;
-    font-family: cursive;
-}
 
 ol {
     list-style: none;
@@ -223,8 +217,9 @@ ol {
     font-family: 'Barlow', sans-serif;
     font-weight: 900;
     font-size: 2.5rem;
-    margin-bottom: 4vh;
-    margin-top: 10vh;
+    margin: 5vh 0 10vh 0;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .projectlist li, 
@@ -247,6 +242,7 @@ ol {
 .projectdescription,
 .blogdescription {
     margin: 3vh 2vw 3vh 0;
+    color: var(--secondory-txt-clr);
 }
 
 .seeprojectsource {
@@ -304,6 +300,27 @@ span {
     font-size: .9rem;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--other-clr2);
+}
+
+section p {
+    color: var(--secondory-txt-clr)
+}
+
+.moreproject {
+    all: unset;
+    margin-top: 8vh;
+    padding: 10px 18px;
+    color: var(--text-color);
+    font-size: .8rem;
+    border: 1.5px solid var(--text-color);
+}
+
+.hide {
+    display: none;
+}
+
+.date {
+    color: var(--footer-clr);
 }
 
 @media screen and (min-width: 700px) {
