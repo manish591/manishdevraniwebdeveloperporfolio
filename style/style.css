@@ -261,7 +261,7 @@ ol {
 
 .projectimg {
     width: 90vw;
-    height: auto;
+    object-fit: cover;
     margin-top: 2vh;
 }
 
@@ -520,13 +520,14 @@ section p {
   .projecttitle, .blogtitle {
       font-size: 4rem;
       width: 60vw;
-      margin: 5vh 10vw;
+      margin: 10vh 10vw;
       text-transform: uppercase;
   }
 
-  .pdescription, .projectcontainer p, .bdescription, .blogcontainer {
-      font-size: 1.2rem;
+  .projectname {
+      font-size: 2rem;
   }
+
 
   .projectcontainer, .blogcontainer {
     width: 60vw;
@@ -548,9 +549,14 @@ section p {
 
   .projectimg {
     width: 55vw;
-    height: auto;
-    margin-top: 2vh;
+    margin-top: 7vh;
+    border: 2px solid rgba(153, 153, 153, 0.534);
 }
+
+.projectlist li {
+    margin-top: 30vh;
+}
+
 
 }
 
@@ -569,6 +575,11 @@ section p {
 
     .one p, .two p, .three p {
         font-size: 1.1rem;
+    }
+
+    .projectimg {
+        max-height: 60vh;
+        object-fit: unset;
     }
     
  }
