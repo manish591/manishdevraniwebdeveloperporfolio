@@ -227,7 +227,7 @@ ol {
 .bdescription,
 .pdescription,
 .projecttitle {
-    margin-left: 10vw;
+    margin-left: 5vw;
     margin-right: 2vw;
 }
 
@@ -237,9 +237,7 @@ ol {
     font-family: 'Barlow', sans-serif;
     font-weight: 900;
     font-size: 2.5rem;
-    margin: 5vh 0 10vh 0;
-    text-align: center;
-    text-transform: uppercase;
+    margin: 5vh 0 5vh 5vw;
 }
 
 .projectlist li, 
@@ -249,7 +247,9 @@ ol {
 
 .blogcontainer,
 .projectcontainer {
-    margin: 15vh 0 5vh 10vw;
+    /* margin: 15vh 0vw 5vh 10vw; */
+    width: 90vw;
+    margin: 0 auto;
 }
 
 .projectname,
@@ -257,6 +257,12 @@ ol {
     font-family: 'Barlow', sans-serif;
     font-weight: 900;
     font-size: 1.5rem;
+}
+
+.projectimg {
+    width: 90vw;
+    height: auto;
+    margin-top: 2vh;
 }
 
 .projectdescription,
@@ -341,6 +347,7 @@ section p {
 
 .date {
     color: var(--footer-clr);
+    display: block;
 }
 
 @media screen and (min-width: 700px) {
@@ -513,8 +520,7 @@ section p {
   .projecttitle, .blogtitle {
       font-size: 4rem;
       width: 60vw;
-      margin-top: 15vh;
-      margin-bottom: 13vh;
+      margin: 5vh 10vw;
       text-transform: uppercase;
   }
 
@@ -524,10 +530,12 @@ section p {
 
   .projectcontainer, .blogcontainer {
     width: 60vw;
+    margin: 0vh 10vw;
   }
 
   .pdescription, .bdescription {
     width: 60vw;
+    margin: 0 10vw;
   }
 
   .seeprojectlive {
@@ -537,6 +545,12 @@ section p {
   .seeprojectlive, .seeprojectsource {
       padding: 12px 30px;
   }
+
+  .projectimg {
+    width: 55vw;
+    height: auto;
+    margin-top: 2vh;
+}
 
 }
 
