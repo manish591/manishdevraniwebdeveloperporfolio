@@ -29,9 +29,9 @@
 
         <main class="body-of-blog">
             <div class="intro">
-                <p class="intro1">For those of you who don't know, CSS is a style sheet language. It allows you to transfer your ideas into a web format. CSS allows you to add colors, fonts, borders etc to your web page i.e. style your web page. CSS has been around for a very long time and has gone through major changes since it's first release. This article will discuss about css selector, one of the core concept of learning css, so let's begin.</p>
+                <p class="intro1">If you are unaware of CSS, it is a style sheet language. That means It allows you to add styling and let you present beautiful web pages. CSS allows you to add colours, fonts, borders to your web page, i.e. style your web page. To beautify html elements, we have to apply css to them. To apply css to any element we have to first select it. This article will discuss CSS selector, one of the core concepts of learning CSS, so let's begin.</p>
 
-                <p class="intro2">The first and the biggest key to understanding CSS is understanding selectors. Selectors are what allows you to target specific HTML elements and apply style to them. This blog is for absolute beginners, You will surely learn about CSS selectors after that.
+                <p class="intro2">The first requirement towards learning the style sheet language CSS is to get familiar with selectors and how they work? Selectors are what allows you to target specific HTML elements and apply the style to them. You can understand CSS selectors like this. Your task is to add font-size 12px to one of four paragraphs in a website, then how are you going to select that particular element? To apply font size to the first paras, we have to target that element. We do so with CSS selectors. The intention behind writing this blog is to teach those who are absolute beginners in CSS. You will surely learn about CSS selectors after that.
                 </p>
 
                 <p class="intro3">There are several type of selector in CSS.</p>
@@ -42,8 +42,43 @@
                     <li class="selector">4. Universal selector</li>
                     <li class="selector">5. Attribute Selector</li>
                 </ol>
+                <p class="intro3">Before diving deep into how these selectors work. Can you answer this. how we are gonna select first p element from the HTML document. Don't feel overwhelmed with it. if you don't know the answer That's ok you will learn over time.</p>
+                <div class="question">
+<pre>
+    <code>
+        <strong class="comment">//First paragraph</strong>
+        <span class="tag">&ltp</span> class='first_para'<span class="tag">&gt</span>Will It Matches&lt/p&gt
+        
+        <strong class="comment">//Second paragraph</strong>
+        &ltp class='second_para'&gtWill It Matches&lt/p&gt
+
+        <strong class="comment">//Third paragraph</strong>
+        &ltp class='third_para'&gtWill It Matches&lt/p&gt
+
+        <strong class="comment">//Fourth paragraph</strong>
+        &ltp class='fourth_para'&gtWill It Matches&lt/p&gt
+    </code>
+</pre>
+
+<pre>
+    <code>
+        <span class="css">.first_para</span>{
+            font-size: 16px;
+        }
+    </code>
+</pre>
+
+                </div>
+                <p class="intro3">As you can see in css file that we selected first para with class selectors, whose class value is first_para and we apply a font-size property to it. Confused how this is working. lwt mw firt go through how css selectors works then we will deep dive into css Selctors onw by one. At the end of this blog i have made a css selectors quiz for you. Please attempt it.</p>
+                <button class="jumptoquiz">Jump To Quiz</button>
             </div>
             <hr>
+
+            <div class="colorresources">
+                <h2 class="color-guide">How Selctors Work In CSS?</h2>
+                <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/css-declaration-small.png" alt="" class="resourceimg">
+                <p class="colorpara">The above picture shows the syntax of css selectors. Step one start from HTML where we edefine various tags. Then in css file we first write selector name and it will search elements with that selector name in the document. Then we declare various css style declation which will be applied to the element matched by css selector.Now understand each Selctors one by one. Let's start with ID selector.</p>
+            </div>
 
             <div class="colorresources">
                 <h2 class="color-guide">ID Selector</h2>
