@@ -18,13 +18,13 @@
     </nav>
 
     <div class="headerimage">
-        <img src="/image/web-design-image.jpg" alt="" class="headerimg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWZyx11X59ZgnySdRb-9i_jJoFKJYJ0RGGFw&usqp=CAU" alt="" class="headerimg">
     </div>
 
     <div class="blogcontainer">
         <header>
-            <h1 class="title">All You Need To Know About CSS Selectors</h1>
-            <span>Written By Manish Devrani</span>
+            <h1 class="title" id="test">All You Need To Know About CSS Selectors</h1>
+            <span id="test">Written By Manish Devrani</span>
         </header>
 
         <main class="body-of-blog">
@@ -47,7 +47,7 @@
 <pre>
     <code>
 <strong class="comment">//First paragraph</strong>
-<span class="tag">&ltp</span> class='first_para'<span class="tag">&gt</span>Will It Matches&lt/gt
+<span class="tag">&ltp</span> class='first_para'<span class="tag">&gt</span>Will It Matches&lt/&gt
         
 <strong class="comment">//Second paragraph</strong>
 &ltp class='second_para'&gtWill It Matches&lt/p&gt
@@ -75,7 +75,7 @@
             <hr>
 
             <div class="colorresources">
-                <h2 class="color-guide">How Selctors Work In CSS?</h2>
+                <h2 class="color-guide">How Selectors Work In CSS?</h2>
                 <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/css-declaration-small.png" alt="" class="resourceimg">
                 <p class="colorpara">The above picture shows the syntax of css selectors. Step one start from HTML where we edefine various tags. Then in css file we first write selector name and it will search elements with that selector name in the document. Then we declare various css style declation which will be applied to the element matched by css selector.Now understand each Selctors one by one. Let's start with ID selector.</p>
             </div>
@@ -84,10 +84,10 @@
                 <h2 class="color-guide">ID Selector</h2>
                 <h3>Syntax</h3>
                 <p class="syntax"><strong>#id_value { style properties }</strong></p>
-                <p class="colorpara">To select an element with id we have to use # character before id attribute value in CSS.</p>
+                <p class="colorpara">As you can see in the syntax above, we are selecting an element with id by appending # character before id attribute value in CSS. We do so because it tells css to look for a element which has id followed by it.</p>
                 <img src="/image/idselect.png" alt="" class="resourceimg">
                 <img src="/image/cssidselect.png" alt="" class="resourceimg">
-                <p class="colorpara">The CSS ID selector matches an element based on the value of the element’s id attribute. In order for the element to be selected, its id attribute must match exactly the value given in the selector.<br> ID selectors rank on top in terms of specificity. Meaning that they can override others selectors style and their style will be applied. So, use ID selectors wisely as it is hard to override them.</p>
+                <p class="colorpara">The CSS ID selector matches an element based on the value of the element’s id attribute. In order for the element to be selected, its id attribute must match exactly the value given in the selector.<br> As you can see in code block above we have four elements. In css file we are selecting elemnt with id matches. Then it look s in html file and select those elemnts.<br>ID selectors rank on top in terms of specificity. Meaning that they can override others selectors style and their style will be applied. So, use ID selectors wisely as it is hard to override them.</p>
             </div>
 
             <div class="colorresources">
@@ -134,10 +134,8 @@
         </main>
         <hr>  
         <div class="outro">
-            <p class="outline">Thanks to everyone who read this blog post, And of course, thanks to you if you've read all the way down to here.
-                I hope you will find something useful out of this blog post that can help you out in understanding CSS much faster. After reading this blog post I highly recommond you to vist MOZILLA and CSS TRICKS for further reading. 
-                <br>Final Words:
-                Thank you so much for taking the time to read this and I hope you can find some really good design resources that will help you with your next design project. You can follow me on Twitter @manishdevrani77, Github @manish591, LinkedIn @manishdevrani .</p>
+            <p class="outline">Thanks to everyone who read this blog post. And of course, thanks to you if you've read down to here. I hope you have found something helpful in this blog post. I'm sure that it can help you out in understanding CSS much faster. After reading this blog post, I highly recommend you to visit MOZILLA and CSS TRICKS for further reading. 
+                <br>Final Words: Congratulation, you have done a fine job. And I hope you can find some practical insights about CSS selectors which will help you understand CSS faster. Apply this learning into projects to solidifies your knowledge. You can follow me on Twitter @manishdevrani77, Github @manish591, LinkedIn @manishdevrani.</p>
         </div>
     </div>
 
