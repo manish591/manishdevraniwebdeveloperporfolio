@@ -23,7 +23,7 @@
 
     <div class="blogcontainer">
         <header>
-            <h1 class="title" id="test tet">All You Need To Know About CSS Selectors</h1>
+            <h1 class="title" id="test">All You Need To Know About CSS Selectors</h1>
             <span id="test">Written By Manish Devrani</span>
         </header>
 
@@ -46,17 +46,17 @@
                 <div class="question">
 <pre>
     <code>
-<strong class="comment">//First paragraph</strong>
-<span class="tag">&ltp</span> class='first_para'<span class="tag">&gt</span>Will It Matches&lt/&gt
+<strong class="comment">&lt!-- First element --&gt</strong>
+<span class="tag">&ltp</span> class = "first_para"<span class="tag">&gt</span>Will It Matches&lt/p&gt
         
-<strong class="comment">//Second paragraph</strong>
-&ltp class='second_para'&gtWill It Matches&lt/p&gt
+<strong class="comment">&lt!-- Second element --&gt</strong>
+&ltp class = "second_para"&gtWill It Matches&lt/p&gt
 
-<strong class="comment">//Third paragraph</strong>
-&ltp class='third_para'&gtWill It Matches&lt/p&gt
+<strong class="comment">&lt!-- Third element --&gt</strong>
+&ltp class = "third_para"&gtWill It Matches&lt/p&gt
 
-<strong class="comment">//Fourth paragraph</strong>
-&ltp class='fourth_para'&gtWill It Matches&lt/p&gt
+<strong class="comment">&lt!-- Fourth element --&gt</strong>
+&ltp class = "fourth_para"&gtWill It Matches&lt/p&gt
     </code>
 </pre>
 
@@ -84,22 +84,77 @@
                 <h2 class="color-guide">ID Selector</h2>
                 <h3>Syntax</h3>
                 <p class="syntax"><strong>#id_value { style properties }</strong></p>
-                <p class="colorpara">As you can see in the syntax above, we are selecting an element with id by appending # character before id attribute value in CSS. We do so because it tells css to look for a element which has id followed by it.
-                    <br> As you can see in code block below we have four elements. In css file we are selecting elemnt with id 'matches'. It selcts all the elements with id matches.
+                <p class="colorpara">As you can see in the syntax above, we are selecting an element with id by appending # character before id attribute value in CSS. We do so because it tells CSS to look for an element that has an id followed by it.
+                    <br>As you can see in the code block below, we have four elements. In the CSS file, we are choosing elements with id "matches". It picks all the elements with id matches. And, applies a color blue.
                 </p>
-                <img src="/image/idselect.png" alt="" class="resourceimg">
-                <img src="/image/cssidselect.png" alt="" class="resourceimg">
-                <p class="colorpara">The CSS ID selector matches an element based on the value of the element’s id attribute. In order for the element to be selected, its id attribute must match exactly the value given in the selector.<br>ID selectors rank on top in terms of specificity. Meaning that they can override others selectors style and their style will be applied. style set with id selectors can't be chnged..</p>
+
+<pre>
+    <code>
+<strong class="comment">&lt!-- First element --&gt</strong>
+<span class="tag">&ltp</span> id="matches"<span class="tag">&gt</span>WillMatches&lt/p&gt
+                        
+<strong class="comment">&lt!-- Second element --&gt</strong>
+&ltdiv&gt
+
+  &ltp id="not-matches"&gtWill It Matches&lt/p&gt
+
+&lt/div&gt
+                
+<strong class="comment">&lt!-- Third element --&gt</strong>
+&ltp id="matches"&gtWill It Matches&lt/p&gt
+                
+<strong class="comment">&lt!-- Fourth element --&gt</strong>
+&ltp id="not-matches"&gtWill It Matches&lt/p&gt
+                    </code>
+</pre>
+                
+<pre>
+    <code>
+ <span class="css">#first_para</span>{
+     color: blue;
+ }
+    </code>
+</pre>
+
+                <p class="colorpara">The CSS ID selector matches an element based on the value of the element id attribute. For the element to be selected, its id attribute must match exactly the value given in the selector. ID selectors rank on top in terms of specificity. It means that they can override other selectors styles. We can't change the style set with the id selector.</p>
             </div>
 
             <div class="colorresources">
                 <h2 class="color-guide">Type Selector</h2>
                 <h3>Syntax</h3>
                 <p class="syntax"><strong>element { style properties }</strong></p>
-                <p class="colorpara">To select an element with type name write html tag name directly in your css file and apply desired styling to it.</p>
-                <br>As you can see in code block below, that to select a h2 tag we can write h2 directly in css file nd apply styling to it.
-                <img src="/image/tagselector.png" alt="" class="resourceimg">
-                <img src="/image/tagcss.png" alt="" class="resourceimg">
+                <p class="colorpara">To select an element with a type name write the HTML tag name directly in your CSS file and apply the desired styling to it.
+                    <br>
+                    As you can see in the code block below to select an h1 tag we can write h1 directly in the CSS file and apply styling to it.
+
+<pre>
+    <code>
+<strong class="comment">&lt!-- First element --&gt</strong>
+<span class="tag">&lth1</span> id="matches"<span class="tag">&gt</span>Hello World!&lt/h1&gt
+                                        
+<strong class="comment">&lt!-- second element --&gt</strong>
+&ltheader&gt
+                
+  &lth2&gtWill It Matches&lt/h2&gt
+                
+&lt/header&gt
+                                
+<strong class="comment">&lt!-- Third element --&gt</strong>
+&ltp id="matches"&gtWill It Matches&lt/p&gt
+                                
+<strong class="comment">&lt!-- Fourth element --&gt</strong>
+&lth1 id="not-matches"&gtWill It Matches&lt/h1&gt
+                    </code>
+</pre>
+                                
+<pre>
+    <code>
+ <span class="css">h1</span>{
+     color: black;
+ }
+    </code>
+</pre>
+
                 <p class="colorpara">The CSS tag selector selects all elements of the given type within a document. One thing to keep in mind is that they are least specific. It’s means they can't override other selector styling, it's better to use class selector.</p>
             </div>
 
@@ -107,13 +162,42 @@
                 <h2 class="color-guide">Class Selector</h2>
                 <h3>Syntax</h3>
                 <p class="syntax"><strong>.class_name { style properties }</strong></p>
-                <p class="colorpara">To select a element with class you have to use . (period) character before class attribute value in CSS. Similar to id selector where we use # character instruct css language to look for a class in documnet.
-                    <br>You can see below how we are selecting element eith class selector. we can also add more than one class to a single element. But, this is not possiblw with id selctor.
+                <p class="colorpara">To select a element with class you have to use . (period) character before class attribute value in CSS. Similar to id selector where we use # character instruct css language to look for a element with that class in documnet.
+                    <br>You can see below how we are selecting element with class selector. We  are selecting elements with class will match and applying color to black. We can also add more than one class to a single element. But, this is not possible with id selctor.
                 </p>
-                <img src="/image/classselect.png" alt="" class="resourceimg">
-                <img src="/image/classcss.png" alt="" class="resourceimg">
+
+
+<pre>
+    <code>
+<strong class="comment">&lt!-- First element --&gt</strong>
+<span class="tag">&lth1</span> class="will-match"<span class="tag">&gt</span>Hello World!h1&gt
+                                                        
+<strong class="comment">&lt!-- second element --&gt</strong>
+&ltaside&gt
+                                
+  &lth2 class="will-notmatch" &gtWill It Matches&lt/h2&gt
+                                
+&lt/aside&gt
+                                                
+<strong class="comment">&lt!-- Third element --&gt</strong>
+&ltp class="will-match matches para_class" &gt/p&gt
+                                                
+<strong class="comment">&lt!-- Fourth element --&gt</strong>
+&ltdiv class="will-notmatch" &gtWill It Matches&lt/div&gt
+                    </code>
+</pre>
+                                                
+<pre>
+    <code>
+ <span class="css">.will-match</span>{
+     color: black;
+ }
+    </code>
+</pre>    
+
                 <p class="colorpara">The CSS class selector matches elements based on the value of their class attribute. Class selectors are best way to select elements. They are probably the most useful and versatile selectors out there.<br>
-                We can add multiple classes to a single element with a space separated. They rank well in specificity and I recommond you to use this selector.</p>
+                We can add multiple classes to a single element with a space separated. They rank well in specificity and I recommond you to use this selector.<br>
+                While naming class values or id values don't start it with number. Don't add space between a class value.</p>
             </div>
 
             <div class="colorresources">
@@ -121,8 +205,35 @@
                 <h3>Syntax</h3>
                 <p class="syntax"><strong>* { style properties }</strong></p>
                 <p class="colorpara">By writing  * character in CSS, we can select all the elements in CSS. This is called universal selector.<br> if inside universal selector you have defined the color to be blue, then it will apply color to every element on a web page.</p>
-                <img src="/image/uniselect.png" alt="" class="resourceimg">
-                <img src="/image/unicss.png" alt="" class="resourceimg">
+                
+<pre>
+                    <code>
+<strong class="comment">&lt!-- First element --&gt</strong>
+<span class="tag">&lth1</span> class="will-match"<span class="tag">&gt</span>HeWorld!h1&gt
+                                                                        
+<strong class="comment">&lt!-- second element --&gt</strong>
+&ltaside&gt
+                                                
+  &lth2 class="will-notmatch" &gtWill It Matches&lt/h2&gt
+                                                
+&lt/aside&gt
+                                                                
+<strong class="comment">&lt!-- Third element --&gt</strong>
+&ltp class="will-match matches para_class" &gt/p&gt
+                                                                
+<strong class="comment">&lt!-- Fourth element --&gt</strong>
+&ltdiv class="will-notmatch" &gtWill It Matches&lt/div&gt
+                    </code>
+</pre>
+                                                        
+<pre>
+    <code>
+ <span class="css">*</span>{
+     color: pink;
+ }
+    </code>
+</pre>    
+
                 <p class="colorpara">The CSS universal selector (*) matches elements of any type. It is also known as wildcard selector.</p>
             </div>
 
@@ -130,11 +241,40 @@
                 <h2 class="color-guide">Attribute Selector</h2>
                 <h3>Syntax</h3>
                 <p class="syntax"><strong>[attr=value] { style properties }</strong></p>
-                <p class="colorpara">To select an element with attribute write attributename=attributevalue inside square brackett([]) in CSS. Square brackett instruct css anguage to look for an attribute in the documnet.</p>
+                <p class="colorpara">To select an element with attribute write attributename=attributevalue inside square brackett([]) in CSS. Square brackett instruct css language to look for an attribute in the documnet.</p>
                 <br>As you an see below we are selcting attribute data-model with value yes. Css selelcts all elements that have similar attribute.
                 <img src="/image/atrselect.png" alt="" class="resourceimg">
                 <img src="/image/atrcss.png" alt="" class="resourceimg">
-                <p class="colorpara">The CSS attribute selector matches elements based on the presence or value of a given attribute. Attribute selector have same specificity as of class selector. They look little bit tricky to understand but useful though. But in some old version browser they are not supported. Attribute selector offers a lot of other ways to selct element. you can read it here.3</p>
+
+<pre>
+<code>
+<strong class="comment">&lt!-- First element --&gt</strong>
+<span class="tag">&lth1</span> data-model="yes"<span class="tag">&gt</span>HeWorld!h1&gt
+                                                                        
+<strong class="comment">&lt!-- second element --&gt</strong>
+&ltaside&gt
+                                                
+  &ltdiv data-model = "no" &gtIt Will Not Match&lt/div&gt
+                                                
+&lt/aside&gt
+                                                                
+<strong class="comment">&lt!-- Third element --&gt</strong>
+&ltp data-model &gt/ No Value p&gt
+                                                                
+<strong class="comment">&lt!-- Fourth element --&gt</strong>
+&ltdiv data-model = "yes" &gtWill It Matches&lt/div&gt
+</code>
+</pre>
+                                                        
+<pre>
+    <code>
+ <span class="css">[data-model = "yes"]</span>{
+     color: green;
+ }
+    </code>
+</pre>  
+
+                <p class="colorpara">The CSS attribute selector matches elements based on the presence or value of a given attribute. Attribute selector have same specificity as of class selector. They look little bit tricky to understand but useful though. But in some old version browser they are not supported. Attribute selector offers a lot of other ways to selct element. you can read it here.</p>
             </div>
         </main>
         <hr>  
