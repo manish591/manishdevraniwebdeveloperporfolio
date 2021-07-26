@@ -23,7 +23,7 @@
 
     <div class="blogcontainer">
         <header>
-            <h1 class="title" id="test">All You Need To Know About CSS Selectors</h1>
+            <h1 class="title" id="test tet">All You Need To Know About CSS Selectors</h1>
             <span id="test">Written By Manish Devrani</span>
         </header>
 
@@ -42,7 +42,7 @@
                     <li class="selector">4. Universal selector</li>
                     <li class="selector">5. Attribute Selector</li>
                 </ol>
-                <p class="intro3">Before diving deep into how these selectors work. Can you answer this. how we are gonna select first p element from the HTML document. Don't feel overwhelmed with it. if you don't know the answer That's ok you will learn over time.</p>
+                <p class="intro3">Before diving deep into how these selectors work. Can you answer this? How we are going to select the first p element from the HTML document. Don't feel bad if you don't know how to do it. That's ok! You will learn over time.</p>
                 <div class="question">
 <pre>
     <code>
@@ -69,7 +69,7 @@
 </pre>
 
                 </div>
-                <p class="intro3">As you can see in css file that we selected first para with class selectors, whose class value is first_para and we apply a font-size property to it. Confused how this is working. lwt mw firt go through how css selectors works then we will deep dive into css Selctors onw by one. At the end of this blog i have made a css selectors quiz for you. Please attempt it.</p>
+                <p class="intro3">We selected the first paragraph with the class name "first_para". Then I applied a font-size property to it. For a beginner, this might be a bit confusing. Let me first go through how CSS selectors works, then we will deep dive into CSS Selectors one by one. At the end of this blog, I have made a CSS selectors quiz for you. If you want to improve your CSS selector knowledge, then you should try this quiz.</p>
                 <button class="jumptoquiz">Jump To Quiz</button>
             </div>
             <hr>
@@ -77,38 +77,42 @@
             <div class="colorresources">
                 <h2 class="color-guide">How Selectors Work In CSS?</h2>
                 <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/css-declaration-small.png" alt="" class="resourceimg">
-                <p class="colorpara">The above picture shows the syntax of css selectors. Step one start from HTML where we edefine various tags. Then in css file we first write selector name and it will search elements with that selector name in the document. Then we declare various css style declation which will be applied to the element matched by css selector.Now understand each Selctors one by one. Let's start with ID selector.</p>
+                <p class="colorpara">The above picture shows the syntax of CSS selectors. Step one start from HTML, where we define various tags. Then in the CSS file, we define two things. One is a CSS selector and, the other is a CSS declaration inside curly braces. CSS selector finds all the p elements in the document. Then we declare various CSS style declarations. These are value property pairs used to define styling on the element matched by the CSS selector. Now understand each Selectors one by one. Let's start with the ID selector.</p>
             </div>
 
             <div class="colorresources">
                 <h2 class="color-guide">ID Selector</h2>
                 <h3>Syntax</h3>
                 <p class="syntax"><strong>#id_value { style properties }</strong></p>
-                <p class="colorpara">As you can see in the syntax above, we are selecting an element with id by appending # character before id attribute value in CSS. We do so because it tells css to look for a element which has id followed by it.</p>
+                <p class="colorpara">As you can see in the syntax above, we are selecting an element with id by appending # character before id attribute value in CSS. We do so because it tells css to look for a element which has id followed by it.
+                    <br> As you can see in code block below we have four elements. In css file we are selecting elemnt with id 'matches'. It selcts all the elements with id matches.
+                </p>
                 <img src="/image/idselect.png" alt="" class="resourceimg">
                 <img src="/image/cssidselect.png" alt="" class="resourceimg">
-                <p class="colorpara">The CSS ID selector matches an element based on the value of the element’s id attribute. In order for the element to be selected, its id attribute must match exactly the value given in the selector.<br> As you can see in code block above we have four elements. In css file we are selecting elemnt with id matches. Then it look s in html file and select those elemnts.<br>ID selectors rank on top in terms of specificity. Meaning that they can override others selectors style and their style will be applied. So, use ID selectors wisely as it is hard to override them.</p>
+                <p class="colorpara">The CSS ID selector matches an element based on the value of the element’s id attribute. In order for the element to be selected, its id attribute must match exactly the value given in the selector.<br>ID selectors rank on top in terms of specificity. Meaning that they can override others selectors style and their style will be applied. style set with id selectors can't be chnged..</p>
             </div>
 
             <div class="colorresources">
-                <h2 class="color-guide">Tag Selector</h2>
+                <h2 class="color-guide">Type Selector</h2>
                 <h3>Syntax</h3>
                 <p class="syntax"><strong>element { style properties }</strong></p>
-                <p class="colorpara">To select an element with tag name write tag name of particular element you want to select.</p>
+                <p class="colorpara">To select an element with type name write html tag name directly in your css file and apply desired styling to it.</p>
+                <br>As you can see in code block below, that to select a h2 tag we can write h2 directly in css file nd apply styling to it.
                 <img src="/image/tagselector.png" alt="" class="resourceimg">
                 <img src="/image/tagcss.png" alt="" class="resourceimg">
-                <p class="colorpara">The CSS tag selector selects all elements of the given type within a document. Tag selectors are at their most useful when changing properties that are unique to that HTML element. Like setting the list-style on a  list element. Also in chaining selector you can use tag selector.<br>
-                One thing to keep in mind is that they are least specific. It’s means they can't override other selector styling, it's better to use class selector.</p>
+                <p class="colorpara">The CSS tag selector selects all elements of the given type within a document. One thing to keep in mind is that they are least specific. It’s means they can't override other selector styling, it's better to use class selector.</p>
             </div>
 
             <div class="colorresources">
                 <h2 class="color-guide">Class Selector</h2>
                 <h3>Syntax</h3>
                 <p class="syntax"><strong>.class_name { style properties }</strong></p>
-                <p class="colorpara">To select a element with class you have to use . (period) character before class attribute value in CSS.</p>
+                <p class="colorpara">To select a element with class you have to use . (period) character before class attribute value in CSS. Similar to id selector where we use # character instruct css language to look for a class in documnet.
+                    <br>You can see below how we are selecting element eith class selector. we can also add more than one class to a single element. But, this is not possiblw with id selctor.
+                </p>
                 <img src="/image/classselect.png" alt="" class="resourceimg">
                 <img src="/image/classcss.png" alt="" class="resourceimg">
-                <p class="colorpara">The CSS class selector matches elements based on the contents of their class attribute. Class selectors are best way to select elements. They are probably the most useful and versatile selectors out there. In part because they are well supported in all browsers.<br>
+                <p class="colorpara">The CSS class selector matches elements based on the value of their class attribute. Class selectors are best way to select elements. They are probably the most useful and versatile selectors out there.<br>
                 We can add multiple classes to a single element with a space separated. They rank well in specificity and I recommond you to use this selector.</p>
             </div>
 
@@ -116,20 +120,21 @@
                 <h2 class="color-guide">Universal Selector</h2>
                 <h3>Syntax</h3>
                 <p class="syntax"><strong>* { style properties }</strong></p>
-                <p class="colorpara">By writing  * character in CSS, we can select all the elements in CSS. This is called universal selector.</p>
+                <p class="colorpara">By writing  * character in CSS, we can select all the elements in CSS. This is called universal selector.<br> if inside universal selector you have defined the color to be blue, then it will apply color to every element on a web page.</p>
                 <img src="/image/uniselect.png" alt="" class="resourceimg">
                 <img src="/image/unicss.png" alt="" class="resourceimg">
-                <p class="colorpara">The CSS universal selector (*) matches elements of any type. Universal selectors are written with * character. Let's say we want to reomve padding from every element in HTML then this becomes useful.</p>
+                <p class="colorpara">The CSS universal selector (*) matches elements of any type. It is also known as wildcard selector.</p>
             </div>
 
             <div class="colorresources">
                 <h2 class="color-guide">Attribute Selector</h2>
                 <h3>Syntax</h3>
                 <p class="syntax"><strong>[attr=value] { style properties }</strong></p>
-                <p class="colorpara">To select an element with attribute write attributename=attributevalue inside square brackett in CSS.</p>
+                <p class="colorpara">To select an element with attribute write attributename=attributevalue inside square brackett([]) in CSS. Square brackett instruct css anguage to look for an attribute in the documnet.</p>
+                <br>As you an see below we are selcting attribute data-model with value yes. Css selelcts all elements that have similar attribute.
                 <img src="/image/atrselect.png" alt="" class="resourceimg">
                 <img src="/image/atrcss.png" alt="" class="resourceimg">
-                <p class="colorpara">The CSS attribute selector matches elements based on the presence or value of a given attribute. Attribute selector have same specificity as of class selector. They look little bit tricky to understand but useful though. But in some old version browser they are not supported.</p>
+                <p class="colorpara">The CSS attribute selector matches elements based on the presence or value of a given attribute. Attribute selector have same specificity as of class selector. They look little bit tricky to understand but useful though. But in some old version browser they are not supported. Attribute selector offers a lot of other ways to selct element. you can read it here.3</p>
             </div>
         </main>
         <hr>  
