@@ -177,9 +177,6 @@ strong {
     margin-top: 5vh;
 }
 
-#test {
-    color: aqua;
-}
 
 @media only screen and (min-width: 700px) {
     .blogcontainer {
