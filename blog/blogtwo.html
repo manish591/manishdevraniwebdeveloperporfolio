@@ -18,7 +18,7 @@
     </nav>
 
     <div class="headerimage">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWZyx11X59ZgnySdRb-9i_jJoFKJYJ0RGGFw&usqp=CAU" alt="" class="headerimg">
+        <img src="/image/css selector.png" alt="" class="headerimg">
     </div>
 
     <div class="blogcontainer">
@@ -34,7 +34,7 @@
                 <p class="intro2">The first requirement towards learning the style sheet language CSS is to get familiar with selectors and how they work? Selectors are what allows you to target specific HTML elements and apply the style to them. You can understand CSS selectors like this. Your task is to add font-size 12px to one of four paragraphs in a website, then how are you going to select that particular element? To apply font size to the first paras, we have to target that element. We do so with CSS selectors. The intention behind writing this blog is to teach those who are absolute beginners in CSS. You will surely learn about CSS selectors after that.
                 </p>
 
-                <p class="intro3">There are several type of selector in CSS.</p>
+                <p class="intro3">There are several type of selector in CSS. But, here in this blog we are only going to learn basic selector to start your css game. I'm not going into depth beacause it can make you overwhwlmwd with css.</p>
                 <ol>
                     <li class="selector">1. ID Selector</li>
                     <li class="selector">2. Tag Selector</li>
@@ -59,17 +59,18 @@
 &ltp class = "fourth_para"&gtWill It Matches&lt/p&gt
     </code>
 </pre>
+                 <p class="intro3">We will select the first para like this.</p>
 
 <pre>
     <code>
- <span class="css">.first_para</span>{
+ <div class="css">.first_para {</div>
      font-size: 16px;
  }
     </code>
 </pre>
 
                 </div>
-                <p class="intro3">We selected the first paragraph with the class name "first_para". Then I applied a font-size property to it. For a beginner, this might be a bit confusing. Let me first go through how CSS selectors works, then we will deep dive into CSS Selectors one by one. At the end of this blog, I have made a CSS selectors quiz for you. If you want to improve your CSS selector knowledge, then you should try this quiz. This quiz is made as a CLI app.</p>
+                <p class="intro3">We selected the first paragraph with the class name "first_para". Then I applied a font-size property to it. For a beginner, this might be a bit confusing. Let me first go through how CSS selectors works, then we will deep dive into CSS Selectors one by one. I have made a CSS selectors quiz for you. If you want to improve your CSS selector knowledge, then you should try this quiz. This quiz is made as a CLI app.</p>
                 <button class="jumptoquiz">Take Quiz</button>
             </div>
             <hr>
@@ -77,7 +78,7 @@
             <div class="colorresources">
                 <h2 class="color-guide">How Selectors Work In CSS?</h2>
                 <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/css-declaration-small.png" alt="" class="resourceimg">
-                <p class="colorpara">The above picture shows the syntax of CSS selectors. Step one start from HTML, where we define various tags. Then in the CSS file, we define two things. One is a CSS selector and, the other is a CSS declaration inside curly braces. CSS selector finds all the p elements in the document. Then we declare various CSS style declarations. These are value property pairs used to define styling on the element matched by the CSS selector. Now understand each Selectors one by one. Let's start with the ID selector.</p>
+                <p class="colorpara">The above picture shows the basic css rule for applying styling. Step one start from HTML, where we define various tags. Then in the CSS rule, we define two things. One is a CSS selector and, the other is a CSS declaration inside curly braces. CSS selector finds all the p elements in the document. Then we declare various CSS style declarations. These are value property pairs used to define styling on the element matched by the CSS selector. Now, after selecting all the p elements this css rule indicates to apply red color to all p tags. Now understand each Selectors one by one. Let's start with the ID selector.</p>
             </div>
 
             <div class="colorresources">
@@ -85,38 +86,39 @@
                 <h3>Syntax</h3>
                 <p class="syntax"><strong>#id_value { style properties }</strong></p>
                 <p class="colorpara">As you can see in the syntax above, we are selecting an element with id by appending # character before id attribute value in CSS. We do so because it tells CSS to look for an element that has an id followed by it.
-                    <br>As you can see in the code block below, we have four elements. In the CSS file, we are choosing elements with id "matches". It picks all the elements with id matches. And, applies a color blue.
-                </p>
+
+                    <br>As you can see in the code block below, we have four elements. In the CSS file, we are choosing elements with id <strong>"matches"</strong>. It picks all the elements with id matches. And, applies a color blue.</p>
 
 <pre>
     <code>
-<strong class="comment">&lt!-- First element --&gt</strong>
-<span class="tag">&ltp</span> id="matches"<span class="tag">&gt</span>WillMatches&lt/p&gt
+<strong class="comment">&lt!-- Selected --&gt</strong>
+<span class="tag">&ltp</span> id="matches"<span class="tag">&gt</span>Will Matches&lt/p&gt
                         
-<strong class="comment">&lt!-- Second element --&gt</strong>
+<strong class="comment">&lt!-- Not Selected --&gt</strong>
 &ltdiv&gt
 
   &ltp id="not-matches"&gtWill It Matches&lt/p&gt
 
 &lt/div&gt
                 
-<strong class="comment">&lt!-- Third element --&gt</strong>
-&ltp id="matches"&gtWill It Matches&lt/p&gt
+<strong class="comment">&lt!-- Selected --&gt</strong>
+&ltp id="matches" &gtWill It Matches&lt/p&gt
                 
-<strong class="comment">&lt!-- Fourth element --&gt</strong>
+<strong class="comment">&lt!-- Not Selected --&gt</strong>
 &ltp id="not-matches"&gtWill It Matches&lt/p&gt
                     </code>
 </pre>
                 
 <pre>
     <code>
- <span class="css">#first_para</span>{
+ <div class="css">#matches {</div>
      color: blue;
  }
     </code>
 </pre>
 
-                <p class="colorpara">The CSS ID selector matches an element based on the value of the element id attribute. For the element to be selected, its id attribute must match exactly the value given in the selector. ID selectors rank on top in terms of specificity. It means that they can override other selectors styles. We can't change the style set with the id selector.</p>
+                <p class="colorpara">The CSS ID selector matches an element based on the value of the element id attribute. For the element to be selected, its id attribute must match exactly the value given in the selector. This is because, css selectors are case sensitive so they must match element names and attribute values exactly. ID selectors rank on top in terms of specificity. It means that they can override other selectors styles. We can't change the style set with the id selector.</p>
+
             </div>
 
             <div class="colorresources">
@@ -125,7 +127,7 @@
                 <p class="syntax"><strong>element { style properties }</strong></p>
                 <p class="colorpara">To select an element with a type name write the HTML tag name directly in your CSS file and apply the desired styling to it.
                     <br>
-                    As you can see in the code block below to select an h1 tag we can write h1 directly in the CSS file and apply styling to it.
+                    As you can see in the code block below to select an h1 tag we can write h1 directly in the CSS file and apply styling to it.</p>
 
 <pre>
     <code>
@@ -205,30 +207,30 @@
                 <h3>Syntax</h3>
                 <p class="syntax"><strong>* { style properties }</strong></p>
                 <p class="colorpara">By writing  * character in CSS, we can select all the elements in CSS. This is called universal selector.<br> if inside universal selector you have defined the color to be blue, then it will apply color to every element on a web page.</p>
-                
+
 <pre>
-                    <code>
+    <code>
 <strong class="comment">&lt!-- First element --&gt</strong>
 <span class="tag">&lth1</span> class="will-match"<span class="tag">&gt</span>HeWorld!h1&gt
-                                                                        
+
 <strong class="comment">&lt!-- second element --&gt</strong>
 &ltaside&gt
-                                                
+
   &lth2 class="will-notmatch" &gtWill It Matches&lt/h2&gt
-                                                
+
 &lt/aside&gt
-                                                                
+
 <strong class="comment">&lt!-- Third element --&gt</strong>
 &ltp class="will-match matches para_class" &gt/p&gt
-                                                                
+
 <strong class="comment">&lt!-- Fourth element --&gt</strong>
 &ltdiv class="will-notmatch" &gtWill It Matches&lt/div&gt
-                    </code>
-</pre>
+    </code>
+</pre>                
                                                         
 <pre>
     <code>
- <span class="css">*</span>{
+ <span class="css">* {</span>
      color: pink;
  }
     </code>
@@ -241,40 +243,40 @@
                 <h2 class="color-guide">Attribute Selector</h2>
                 <h3>Syntax</h3>
                 <p class="syntax"><strong>[attr=value] { style properties }</strong></p>
-                <p class="colorpara">To select an element with attribute write attributename=attributevalue inside square brackett([]) in CSS. Square brackett instruct css language to look for an attribute in the documnet.</p>
-                <br>As you an see below we are selcting attribute data-model with value yes. Css selelcts all elements that have similar attribute.
-
+                <p class="colorpara">To select an element with attribute write attributename=attributevalue inside square brackett([]) in CSS. Square brackett instruct css language to look for an attribute in the documnet.
+                <br>As you an see below we are selcting attribute data-model with value yes. Css selelcts all elements that have similar attribute.</p>
 <pre>
-<code>
+    <code>
 <strong class="comment">&lt!-- First element --&gt</strong>
 <span class="tag">&lth1</span> data-model="yes"<span class="tag">&gt</span>HeWorld!h1&gt
-                                                                        
+
 <strong class="comment">&lt!-- second element --&gt</strong>
 &ltaside&gt
                                                 
   &ltdiv data-model = "no" &gtIt Will Not Match&lt/div&gt
                                                 
 &lt/aside&gt
-                                                                
+
 <strong class="comment">&lt!-- Third element --&gt</strong>
 &ltp data-model &gt/ No Value p&gt
-                                                                
+
 <strong class="comment">&lt!-- Fourth element --&gt</strong>
 &ltdiv data-model = "yes" &gtWill It Matches&lt/div&gt
-</code>
+    </code>
 </pre>
                                                         
 <pre>
-    <code>
- <span class="css">[data-model = "yes"]</span>{
+<code>
+ <span class="css">[data-model = "yes"] {</span>
      color: green;
  }
-    </code>
+</code>
 </pre>  
 
                 <p class="colorpara">The CSS attribute selector matches elements based on the presence or value of a given attribute. Attribute selector have same specificity as of class selector. They look little bit tricky to understand but useful though. But in some old version browser they are not supported. Attribute selector offers a lot of other ways to selct element. you can read it here.</p>
             </div>
         </main>
+
         <hr>  
         <div class="outro">
             <p class="outline">Thanks to everyone who read this blog post. And of course, thanks to you if you've read down to here. I hope you have found something helpful in this blog post. I'm sure that it can help you out in understanding CSS much faster. After reading this blog post, I highly recommend you to visit MOZILLA and CSS TRICKS for further reading. 

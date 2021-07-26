@@ -68,6 +68,7 @@ hr {
 
 .headerimg {
     width: 90vw;
+    margin: 0 auto;
 }
 
 .resourceimage {
@@ -77,6 +78,7 @@ hr {
 
 .resourceimg {
     width: 90vw;
+    margin: 5vh auto;
 }
 
 h1, h2, h3 {
@@ -151,10 +153,12 @@ pre {
     background-color: rgb(22, 16, 36);
     color: white;
     margin-top: 5vh;
-    margin-left: -1vw;
+    margin-left: 0vw;
     font-size: .7rem;
     padding: 12px;
     display: block;
+    width: 90vw;
+
 }
 
 
@@ -242,6 +246,7 @@ strong {
 
     pre {
         font-size: 1.2rem;
+        width: 50vw;
     }
 
 }
