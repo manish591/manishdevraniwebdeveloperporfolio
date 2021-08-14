@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 10vh auto;
+    background-color: #E7816B;
+    padding: 10px 15px;
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(51, 51, 51, 0.411);
+}
+
+.quiz-description {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 1.2;
+    margin-bottom: 5vh;
+}
+
+.option {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.options {
+    width: 42%;
+    height: 10vh;
+    margin-top: 2vh;
+}
+
+.instruction-1, .instruction-2, .instruction-3 {
+    margin-top: 2vh;
+    font-weight: bold;
+    text-align: left;
+}
+
+.next {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.next-btn {
+    margin-top: 5vh;
+    padding: 5px 10px;
+}
+
+.startquiz-btn {
+    width: 30%;
+    margin: 5vh auto;
+    height: 10vh;
+}
+
+
+.question {
+    margin-top: 5vh;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.hide {
+    display: none;
+}
+
+.back {
+    padding: 10px 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+@media only screen and (min-width: 700px) {
+    .container {
+        width: 35vw;
+    }
+
+    .options {
+        width: 13vw;
+        height: 10vh;
+    }
+
+    .question {
+        margin-bottom: 4vh;
+    }
+}
