@@ -181,6 +181,9 @@ strong {
     margin-top: 5vh;
 }
 
+.color-guide {
+    margin-top: 10vh;
+}
 
 @media only screen and (min-width: 700px) {
     .blogcontainer {

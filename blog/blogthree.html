@@ -42,31 +42,56 @@
             <div class="colorresources">
                 <h2 class="color-guide">Before We Begin</h2>
                 <p class="colorpara">You can also see that above the html tag we have Doctype HTML and lang attribute. Let us explore them first.
-                    <br><strong>DOCTYPE HTML</strong> tells Instruct document that which version to use in this document. The above tag tells browser to use HTML 5 in the document. If you didn't write this in your document it will get confused. It can't identify whhich version of code to expect. It can still parse code but also introduced bugs in your code sometimes.
-                    <br><strong>lang="en"</strong> attribute used to identify the language of text content on the web. en here means to expect english language. There are other various code available.<br> Let's discuss what's inside head of the html document.</h3>
+                    <br><strong>DOCTYPE HTML</strong> tells Instruct document that which version to use in this document. The above tag tells browser to use HTML 5 in the document. If you didn't write this in your document it will get confused. It can't identify which version of code to expect. It can still parse code but also introduced bugs in your code sometimes.
+                    <br><strong>lang="en"</strong> attribute used to identify the language of text content on the web. "en" here means to expect english language. There are other various code available.<br> Let's discuss what's inside head of the html document.</h3>
 
                <h2 class="color-guide">Title Tag</h2>
-               <p class="aboutcoolors">This tag is used to describe title of the whole document. Don't confuse it with h1 heading tag. H1 is present on the web page itself but title tag content present on tab section.</p>
+<pre>
+    <code>
+&lttitle&gtThis Is the Title&lt/title&gt
+    </code>
+</pre>
+               <p class="aboutcoolors">As you can see the syntax above that this tag is similar to any othe tag used in html. This tag is used to describe title of the whole document. Don't confuse it with h1 heading tag. H1 is present on the web page itself but title tag content present on tab section or title bar of the page.</p>
             </div>
 
             <div class="iconresources">
-                <h2 class="icons">Linking to css and javascript</h2>
+                <h2 class="icons">Linking to CSS and Javascript</h2>
+<pre>
+    <code>
+<span>&lt!--Linking to external css--&gt</span>    
+&ltlink href="/style.css" rel="stylesheet"&gt
+
+<span>&lt!--Linking to external js file--&gt</span>    
+&ltscript scr="/app.js" defer &gt&lt/script&gt
+    </code>
+</pre>
                 <p class="iconpara">Having a separate CSS and Javscript file is must. This can make your code more beautiful and human readable. You can link your external CSS and Javscript file inside head using link and script tags respectively.
-                 <br> For Linking CSS you have to use link tag with href and rel attribute.
-                 <br> For Linking to Javscript you have to use script tag with source attribute.   
+                 <br> For Linking CSS you have to use link tag with href and rel attribute. href attribute provide a reference of external file inside html. href takes external file url as a value. While rel is used to define relationship between linked document and current document where we have linked it. Here it is stylesheet means for styling. 
+                 <br> For Linking to Javscript you have to use script tag with source attribute. src attribute takes file url as value amd links to that file.  
                 </p>
             </div>
 
             <div class="stockimagesresources">
                 <h2 class="stockimages">Adding custom icons using favicon</h2>
-                <p class="stockimagepara">You can also add favicons short for favorite icons on your web page using favicons. they appear right in front of title of your tab. They can improve design of website and make it more attractive.</p>
+<pre>
+    <code>
+<span>&lt!--Linking to external css--&gt</span>    
+&ltlink href="/favicon.png" rel="icon" type="image/png"&gt
+    </code>
+</pre>                
+                <p class="stockimagepara">As You can see above how you can add favicons short for favorite icons on your web page. Ihey appear right in front of title of your address bar. They can improve design of website and make it more attractive. We can add favicon using link tag. We specify url with href and relation of linked item with rel attribute.</p>
             </div>
 
             <div class="illustrationsresources">
                 <h2 class="illustration">Meta tags</h2>
-                <p class="illustrationpara">Meta data is the data that describes the data of document. It won't show on web page but do a lot behind the scenes. It is useful for search engine optimization. It is used to describe content, author, description keyword related to the page. Let's explore them.</p>
+                <p class="illustrationpara">Meta data is the data that describes the data of document. It won't show on web page but do a lot behind the scenes. It is useful for search engine optimization. It is used to describe content, author, description keyword related to the page. Meta data is used by browser. We can add meta data to the document using &ltmeta&gt tag.</p>
 
-                <h3 class="undraw">charset attribute of meta tag</h3>
+                <h3 class="undraw">Charset Attribute Of Meta Tag</h3>
+<pre>
+    <code>
+&ltmeta charset="utf-8"&gt
+    </code>
+</pre>                
                 <p class="aboutundraw"> The charset attribute of meta tag is used to specify the character encoding of the HTML document. It's value must be set to UTF-8, It can identify every charcter of any language. If it is not set to UTF-8 then it will not render certain language character properly.</p>
 
                 <h3 class="drawkit">Define keyword, author, description with meta tag</h3>
