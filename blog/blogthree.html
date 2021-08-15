@@ -28,9 +28,9 @@
         </header>
         <main class="body-of-blog">
             <div class="intro">
-                <p class="intro1">Hello, I'm manish, a aspiring web developer. If you are learning about web development then you have probably heard about HTML. HTML stands for hyper text markup language. It is called skeleton of the web page . It is used to layout the website. Hyper text means it is used to link to various documents in the world wide web thus make a connection in the web page. HTML uses various markup tags to layout HTML document. Like head tag, heading tag, paragraph tag etc.</p>
+                <p class="intro1">Hello, I'm manish, a aspiring web developer. If you are new to learning about web development then first undersatnd what is HTMl. HTML stands for hyper text markup language. It is called skeleton of the web page . It is used to layout the website. Hyper text provides access to other documents via hyperlinks. HTML uses various markup tags to layout HTML document. Markup language define the structure and presentation of raw text. There are many tags like head tag, heading tag, paragraph tag etc.</p>
 
-                <p class="intro2">Have you ever use emmet. Probably yes! Emmet is powerful feature in vs code that give you starter code inside your HTML file. But, due to this we ignore the various tags above body tag. We forget about meta tag, title tag etc. These are the most important tag that you must know about. They can help improve traffic in your website. This we will learn later so stick around. You can see the basic HTML document that we are referring for this blog post:</p>
+                <p class="intro2">In this blog post we will discuss some of the tags we ignore due to emmet. Have you ever use emmet. Probably yes! Emmet is powerful feature in vs code that give you starter code inside your HTML file. It is like a shortcut for writing code. It can speeds your work. But, due to this we ignore the various tags above body tag. We forget about meta tag, title tag etc. These are the most important tag that you must know about. They can help improve traffic in your website. This we will learn later so stick around. You can see the basic HTML document that we are referring for this blog post:</p>
 
                 <div class="resourceimg">
                     <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--29kWVP4B--/c_imagga_scale,f_auto,fl_progressive,h_720,q_auto,w_1280/https://dev-to-uploads.s3.amazonaws.com/i/zbaylzi3lb2jpixr1epr.png" alt="" class="resourceimg">
@@ -42,7 +42,7 @@
             <div class="colorresources">
                 <h2 class="color-guide">Before We Begin</h2>
                 <p class="colorpara">You can also see that above the html tag we have Doctype HTML and lang attribute. Let us explore them first.
-                    <br><strong>DOCTYPE HTML</strong> tells Instruct document that which version to use in this document. The above tag tells browser to use HTML 5 in the document. If you didn't write this in your document it will get confused. It can't identify which version of code to expect. It can still parse code but also introduced bugs in your code sometimes.
+                    <br><strong>DOCTYPE HTML</strong> is an instruction to the browser that in which version of html this document is written. This ensures that web browser parse the document the right way. The above tag tells browser to use HTML 5 in the document. There are different doctype declaration for older versions. If you didn't write this in your document it will get confused. It can't identify which version of code to expect. It can still parse code but also introduced bugs in your code sometimes.
                     <br><strong>lang="en"</strong> attribute used to identify the language of text content on the web. "en" here means to expect english language. There are other various code available.<br> Let's discuss what's inside head of the html document.</h3>
 
                <h2 class="color-guide">Title Tag</h2>
@@ -51,7 +51,7 @@
 &lttitle&gtThis Is the Title&lt/title&gt
     </code>
 </pre>
-               <p class="aboutcoolors">As you can see the syntax above that this tag is similar to any othe tag used in html. This tag is used to describe title of the whole document. Don't confuse it with h1 heading tag. H1 is present on the web page itself but title tag content present on tab section or title bar of the page.</p>
+               <p class="aboutcoolors">As you can see the syntax above that this tag is similar to any other tag used in html. This tag is used to describe title of the whole document. Don't confuse it with h1 heading tag. H1 is present on the web page itself but title tag content present on tab section or title bar of the page.</p>
             </div>
 
             <div class="iconresources">
@@ -84,7 +84,7 @@
 
             <div class="illustrationsresources">
                 <h2 class="illustration">Meta tags</h2>
-                <p class="illustrationpara">Meta data is the data that describes the data of document. It won't show on web page but do a lot behind the scenes. It is useful for search engine optimization. It is used to describe content, author, description keyword related to the page. Meta data is used by browser. We can add meta data to the document using &ltmeta&gt tag.</p>
+                <p class="illustrationpara">Meta data is the data that describes the data of document. It won't show on web page but do contains a lot of inforamtion about the document. It is useful for search engine optimization. It is used to describe content, author, description keyword related to the page. Meta data is used by browser. We can add meta data to the document using &ltmeta&gt tag. There are various meta tags and attributes.</p>
 
                 <h3 class="undraw">Charset Attribute Of Meta Tag</h3>
 <pre>
@@ -94,8 +94,22 @@
 </pre>                
                 <p class="aboutundraw"> The charset attribute of meta tag is used to specify the character encoding of the HTML document. It's value must be set to UTF-8, It can identify every charcter of any language. If it is not set to UTF-8 then it will not render certain language character properly.</p>
 
-                <h3 class="drawkit">Define keyword, author, description with meta tag</h3>
-                <p class="aboutdrawkit">We can define keyword using name = "keyword", which will help in seo and generate more traffic. Similarly author and descrption gives info about document. Who has written this. If anyone need that information he can access it.</p>
+<h3 class="drawkit">Define keyword, author, description with meta tag</h3>
+<pre>
+    <code>
+<span>&lt!--Describes keyword--&gt</span>          
+&ltmeta name="keyword" content="HTML, Javscript, CSS"&gt
+
+<span>&lt!--description of document--&gt</span>  
+&ltmeta name="description" content="This blog will give 
+you insight about HTML head tag elements which are very
+useful"&gt
+
+<span>&lt!--Describes author--&gt</span>  
+&ltmeta name="author" content="Manish"&gt
+    </code>
+</pre>          
+                <p class="aboutdrawkit">As you can see above that with meta tags we can define keywords, document description & author of the docoument. This information is really useful. Keywords can help search engine identify your document useful and thus rank it above in search results. Someone can know who wrote this document by author value. Description is also important and plays a huge role in dearch engine optimization. Also, description gives user what your document is about before clicking it.</p>
             </div>
 
                 <div class="outro">
@@ -108,7 +122,7 @@
     </div>
     <footer class="cta">
       <p class="social">Find Me On</p>
-       <ul>
+       <ul>+
            <li class="socialhandles"><a href="https://www.linkedin.com/in/manishdevrani77/">LinkedIn</a></li>
            <li class="socialhandles"><a href="https://github.com/manish591">Github</a></li>
            <li class="socialhandles"><a href="https://twitter.com/manishdevrani77">Twitter</a></li>
