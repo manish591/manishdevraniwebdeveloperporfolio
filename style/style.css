@@ -151,6 +151,7 @@ strong {
     margin-top: 3vh;
     padding: 10px 15px;
     border: 2px solid var(--text-color);
+    font-size: .8rem;
 }
 
 .browseblog a,
