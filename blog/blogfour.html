@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is css box model?</title>
+    <link rel="stylesheet" href="/style/blog.css">
+</head>
+<body>
+    <nav class="navigation">
+        <ul>
+            <li class="links" id="link"><a href="/index.html">Home</a></li>
+            <li class="links"><a href="/blog.html">Blogs</a></li>
+            <li class="links"><a href="/project.html">Project</a></li>
+        </ul>
+    </nav>
+
+    <div class="headerimage">
+        <img src="/image/web structure according to css box model.png" alt="" class="headerimg">
+    </div>
+
+    <div class="blogcontainer">
+        <header>
+            <h1 class="title">What is CSS box model?</h1>
+            <span>Written By Manish Devrani</span>
+        </header>
+        <main class="body-of-blog">
+            <div class="intro">
+                <p class="intro1">Hey, folks welcome to this post. Today we are going to explain to you about the CSS box model. But, if you are new to CSS. Then you have to first understand what does CSS can do? CSS is a style sheet language that let you present beautiful web pages. It deals with the styling part of your website. The beautiful web pages you see every day is possible only because of CSS. Enough praising CSS, Now we are going to learn about the CSS box model one of the fundamentals concept for learning about CSS. You will learn about how elements on a page are positioned and displayed. If you know the basics of CSS pretty well then you can do wonders. Now, let's begin understanding what is box model?</p>
+                <p class="intro2">If you don't understand box model then you lead to unexpected layouts in your web page. Box model is fundamental key to position and display element with web page. It helps you understand how element position itself according with other element on the web page. You have seen a lot of tags in HTML like paragraph tag, division tag etc. According to standard CSS box model, every element on the web page is interpreted by the browser as living inside a box. We define various style properties to those boxes. As you can see in the image above that these elements are interpreted as a box. With the help of box model we can position elements and build web layout smoothly. These four component combine to give each content a shape and position in the web page. Apply a universal border in CSS to see the box model in action, or go to chrome developer tools to see each box.</p>
+            </div>
+            <div class="colorresources">
+                <h2 class="color-guide">Components of box model</h2>
+                <div class="resourceimage">
+                    <img src="/image/box model diagram.png" alt="" class="resourceimg">
+                </div>
+                <p class="colorpara">If you can in image below if we pick a element from the box model then we can see the major five components in it. These are padding, width, margin, and border. These are basic positioning property. As you can see below in the image how these elements affecting the layout of the these elements. When we combine each element then we get a whole web layout. Now we will discuss these property one by one.</p>
+            </div>
+
+            <div class="iconresources">
+                <h2 class="color-guide">Types of box model</h2>
+                <p class="colorpara">There are two types of box model. One is default box model and other one is alternate which you can set using css.</p>
+                <h3 class="iconosout">Content-box</h3>
+                <p class="aboutflaticon">This is the default box model in CSS. In this type of box model you get the actual size of the box by adding border and padding to the content box. Suppose you have defined the width of actual content to be 200 pixel. Now, if you add padding lets say 20 pixel and border to 5 pixel then the actual width of the box is calculated by adding width + padding right + padding left + border right + border left. In this case it would be 200 + 20 + 20 + 5 + 5 that is equal to 250 pixels.</p>
+                <h3 class="iconosout">Border-Box</h3>
+                <p class="aboutflaticon">On the other hand in border box model width and height is not calculated by adding padding and border size to the content width and height. In this box model if we add padding and border to the content. Then, content will shrink and padding and border will manage in content space only. Suppose if we specify a width of 400 pixels to the content box. Now, if we add the padding 20 pixels and border of 5 pixels, it will not add up to content width. The content width will remain same that is 400 pixels. In this case total width of padding and border is 50 pixels. Now, the content width shrinks to 400 - 50 pixels. 
+                You can set this box model with box-sizing property with value border-box.
+                Now let's see a difference among them using a visual representation.</p>
+            </div>
+
+            <div class="iconresources">
+                <h2 class="color-guide">Let's learn about component of box model</h2>
+                <h3 class="color-guide">Margin</h3>
+                <p class="colorpara">Margin is the outer white-space around the content. Margin is not added to the width of the box. We set margin to space this content with other content on the web page. We can set margin of the content box using the margin-top, margin-bottom, margin-left, margin-right property. 
+                Margin can take negative values.</p>
+                <h3 class="color-guide">Border</h3>
+                <p class="colorpara">Border separate padding and margin of the content in our web page. You can set border using border property.</p>
+                <h3 class="color-guide">Padding</h3>
+                <p class="colorpara">Padding is the white-space between border and actual content. It is used to add some spacing around our content. We can use padding CSS property to manipulate it. 
+                There are four padding values padding-top, padding-bottom, padding-left, padding-right. You can also use one singe padding declaration to describe padding of box in one line. Padding values can't be negative.</p>
+                <h3 class="color-guide">Content</h3>
+                <p class="colorpara">This is the real content of the web page. You can see this section on the image above. This is where your actual content appears. You can apply width and height property.</p>
+            </div>
+
+            <div class="outro">
+                <p class="outline">Now, you can see how important and fundamental part is CSS box model is. Now you learn the fundamentals of CSS box model. You can see if you understand the basics of anything pretty well then you can go to the long term easily. If you are new to CSS then you have to spend more time reading about the basics of CSS. You see now that due to this we layout the various boxes and we apply styling to those boxes. Every element in CSS is living inside a box. Finally thanks for reading down to here and if you've read down to here then please review this blog give valuable feedback on my social profile. You can follow me on github here @joshuaFilli57, twitter as @manishdevrani77 and on linkedin as @hhhdhd.</p>
+            </div>
+        </main>
+    </div>
+
+    <footer class="cta">
+        <p class="social">Find Me On</p>
+         <ul>
+             <li class="socialhandles"><a href="https://www.linkedin.com/in/manishdevrani77/">LinkedIn</a></li>
+             <li class="socialhandles"><a href="https://github.com/manish591">Github</a></li>
+             <li class="socialhandles"><a href="https://twitter.com/manishdevrani77">Twitter</a></li>
+         </ul>
+         <p class="copy">@allrightsreserved</p>
+      </footer>
+</body>
+</html>
