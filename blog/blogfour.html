@@ -47,6 +47,26 @@
                 <p class="aboutflaticon">On the other hand in border box model width and height is not calculated by adding padding and border size to the content width and height. In this box model if we add padding and border to the content. Then, content will shrink and padding and border will manage in content space only. Suppose if we specify a width of 400 pixels to the content box. Now, if we add the padding 20 pixels and border of 5 pixels, it will not add up to content width. The content width will remain same that is 400 pixels. In this case total width of padding and border is 50 pixels. Now, the content width shrinks to 400 - 50 pixels. 
                 You can set this box model with box-sizing property with value border-box.
                 Now let's see a difference among them using a visual representation.</p>
+                <p class="aboutflaticon">You can set border-box property in CSS like this,</p>
+<pre>
+    <code>
+<span>&lt!-- This is HTML File --&gt</span>    
+<div>&ltdiv class="selected" &gt&lt/div&gt</div>
+    </code>
+</pre>
+<pre>
+    <code>
+<span>&lt!-- This is CSS File --&gt</span>    
+<div>.selected {
+   box-sizing: border-box;
+}
+<span>&lt!-- Selecting all element --&gt</span>    
+<div>* {
+   box-sizing: border-box;
+}
+    </div>
+    </code>
+</pre>                
             </div>
 
             <div class="iconresources">
